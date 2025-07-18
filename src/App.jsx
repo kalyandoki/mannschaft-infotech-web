@@ -17,16 +17,15 @@ function App() {
     <>
       <Header />
       <ScrollToTop />
-      <section id="products-services">
-        <ProductsServices />
-      </section>
-
-      <main className="pt-24 scroll-smooth">
-        <section id="home">
-          <HeroSection />
-          <VideoModal />
-          <WelcomeSection />
-          <ServicesGrid />
+      <main className="pt-10 scroll-smooth">
+        <section id="products-services" className="pt-10 pb-14">
+          <section id="home">
+            <HeroSection />
+            <VideoModal />
+            <WelcomeSection />
+            <ServicesGrid />
+          </section>
+          <ProductsServices />
         </section>
 
         <section id="why-us">

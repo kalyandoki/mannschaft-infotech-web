@@ -78,6 +78,7 @@ const Header = () => {
         <ScrollLink
           to="home"
           smooth
+          spy={true}
           offset={-80}
           duration={500}
           onClick={closeMenu}
@@ -93,7 +94,7 @@ const Header = () => {
         </ScrollLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-serif font-bold">
+        {/* <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-serif font-bold">
           {navLinks.map(({ to, label }) => (
             <ScrollLink
               key={to}
@@ -105,6 +106,23 @@ const Header = () => {
               onClick={() => handleDesktopClick(to)}
               activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
               className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-indigo-700 hover:text-white transition duration-100"
+            >
+              {label}
+            </ScrollLink>
+          ))}
+        </nav> */}
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-serif font-bold">
+          {navLinks.map(({ to, label }) => (
+            <ScrollLink
+              key={to}
+              to={to}
+              spy={true} // Required to track scroll
+              smooth={true}
+              offset={-80} // Adjust according to header height
+              duration={500}
+              onClick={() => handleDesktopClick(to)} // Optional: if you want to close menus, log, etc.
+              activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-indigo-700 hover:text-white transition duration-300"
             >
               {label}
             </ScrollLink>
@@ -142,7 +160,11 @@ const Header = () => {
               duration={500}
               onClick={() => handleMobileClick(to)}
               activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 animate-bounce"
-              className="block cursor-pointer px-4 py-2 rounded-md text-[#27362e] font-semibold text-base hover:bg-indigo-700 hover:text-white transition duration-300"
+              className={`${
+                to === "products-services"
+                  ? "bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 animate-bounce block cursor-pointer px-4 py-2 rounded-md text-[#27362e] font-semibold text-base hover:bg-indigo-700 hover:text-white transition duration-300"
+                  : "block cursor-pointer px-4 py-2 rounded-md text-[#27362e] font-semibold text-base hover:bg-indigo-700 hover:text-white transition duration-300"
+              }`}
             >
               {label}
             </ScrollLink>
