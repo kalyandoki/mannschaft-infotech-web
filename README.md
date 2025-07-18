@@ -4,6 +4,12 @@ Welcome to the official source code repository for the **Mannschaft Infotech** w
 
 ---
 
+## 🚀 Live Demo
+
+🔗 https://mannschaft-infotech-web.vercel.app/
+
+---
+
 ## 🛠️ Tech Stack
 
 - **React.js** – Frontend framework
@@ -70,7 +76,7 @@ mannschaft-infotech-web/
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/mannschaft-infotech-web.git
+git clone https://github.com/kalyandoki/mannschaft-infotech-web.git
 cd mannschaft-infotech-web
 npm install
 npm run dev
