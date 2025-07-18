@@ -54,7 +54,7 @@ function WhyUsSection() {
 
         {/* === Right Image === */}
         <div className="flex justify-center">
-          <div className="relative w-54 sm:w-62  md:w-70 lg:w-70 rounded-3xl overflow-hidden">
+          <div className="relative w-54 sm:w-62  md:w-70 lg:w-70 rounded-3xl md:overflow-hidden overflow-auto">
             <img
               src={aboutImg}
               alt="Mannschaft Team"
