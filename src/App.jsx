@@ -18,7 +18,7 @@ function App() {
       <Header />
       <ScrollToTop />
       <main className="pt-10 scroll-smooth">
-        <section id="products-services" className="pt-10 pb-14">
+        <section id="products-services" className="pt-2 pb-14">
           <section id="home">
             <HeroSection />
             <VideoModal />

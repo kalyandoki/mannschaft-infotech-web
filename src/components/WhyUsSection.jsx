@@ -1,9 +1,11 @@
 import aboutImg from "../assets/images/mannschaft logo.png";
+import manojsir from "../assets/images/manoj-sir-ceo.jpg";
 function WhyUsSection() {
   return (
     <section
       id="why-us"
-      className="relative bg-[#1c1e30cb] pt-30 pb-28 px-4 sm:px-6 md:px-16 lg:px-14 text-white overflow-hidden"
+      className="relative  bg-cover bg-center h-[650px] md:h-[660px] w-full md:pt-30 pt-10 pb-28 px-2 sm:px-6 md:px-10 lg:px-10 text-white md:overflow-hidden overflow-auto"
+      style={{ backgroundImage: `url(${manojsir})` }}
     >
       {/* === Top Wave === */}
       <svg
@@ -20,7 +22,7 @@ function WhyUsSection() {
       </svg>
 
       {/* === Content === */}
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:bg-[#39434161] p-6 m-6 rounded-3xl">
         {/* === Left Text === */}
         <div className="text-gray-100 font-serif space-y-6 text-base md:text-xl leading-relaxed">
           <p>
@@ -52,7 +54,7 @@ function WhyUsSection() {
 
         {/* === Right Image === */}
         <div className="flex justify-center">
-          <div className="relative w-64 sm:w-72 md:w-80 lg:w-86 border-t-[5px] border-b-[5px] border-blue-500 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-54 sm:w-62  md:w-70 lg:w-70 rounded-3xl overflow-hidden">
             <img
               src={aboutImg}
               alt="Mannschaft Team"

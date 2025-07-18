@@ -5,7 +5,7 @@ const HeroSection = () => {
   const { openVideoModal } = useAppContext();
 
   return (
-    <section id="home" className="min-h-screen pt-16 bg-white">
+    <section id="home" className="min-h-screen pt-26 bg-white">
       <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-20 items-center">
         <div className="text-center md:text-left">
           <h1 className="text-2xl md:text-4xl font-bold text-gray-800 font-serif leading-relaxed">
