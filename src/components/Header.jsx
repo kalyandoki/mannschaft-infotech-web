@@ -134,7 +134,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-indigo-700 px-4 py-4 space-y-3 font-serif font-bold">
+        <div className="md:hidden bg-white border-t border-indigo-700 px-4 py-6 space-y-3 font-serif font-bold flex flex-col items-center">
           {navLinks.map(({ to, label }) => (
             <ScrollLink
               key={to}
