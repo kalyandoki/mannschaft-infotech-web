@@ -2,7 +2,7 @@ import ClientsCarousel from "../components/ClientsCarousel";
 import PartnersCorousel from "../components/PartnersCorousel";
 
 const PartnerWithUs = () => (
-  <div>
+  <div className="pt-14 pb-20">
     <PartnersCorousel />
     <ClientsCarousel />
   </div>

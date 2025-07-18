@@ -79,8 +79,9 @@ const Header = () => {
           to="home"
           smooth
           spy={true}
-          offset={-80}
-          duration={500}
+          isDynamic={true}
+          offset={-30}
+          duration={200}
           onClick={closeMenu}
           className="cursor-pointer"
         >
@@ -101,11 +102,12 @@ const Header = () => {
               to={to}
               spy={true}
               smooth={true}
-              offset={-80}
-              duration={500}
+              offset={-30}
+              isDynamic={true}
+              duration={200}
               onClick={() => handleDesktopClick(to)}
               activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-indigo-700 hover:text-white transition duration-300"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
               {label}
             </ScrollLink>
@@ -139,11 +141,12 @@ const Header = () => {
               to={to}
               spy={true}
               smooth={true}
-              offset={-80}
-              duration={500}
+              offset={-30}
+              isDynamic={true}
+              duration={200}
               onClick={() => handleMobileClick(to)}
               activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 animate-bounce"
-              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-indigo-700 hover:text-white transition duration-300"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
               {label}
             </ScrollLink>

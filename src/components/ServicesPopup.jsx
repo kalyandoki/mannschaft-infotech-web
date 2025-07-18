@@ -24,7 +24,7 @@ const ServicesPopup = () => {
     // Auto-dismiss after 5 seconds
     const timeoutId = setTimeout(() => {
       setIsServicesPopupVisible(false);
-    }, 8000);
+    }, 10000);
 
     if (isServicesPopupVisible) {
       document.addEventListener("mousedown", handleClickOutside);

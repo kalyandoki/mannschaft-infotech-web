@@ -4,7 +4,7 @@ import WhyUsSection from "../components/WhyUsSection";
 
 function WhyUs() {
   return (
-    <div>
+    <div className="pt-14 pb-20">
       <WhyUsSection />
       <VisionMission />
       <ValuesSection />

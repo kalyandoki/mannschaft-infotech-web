@@ -3,7 +3,7 @@ function WhyUsSection() {
   return (
     <section
       id="why-us"
-      className="relative bg-[#1c1e30cb] pt-24 pb-28 px-4 sm:px-6 md:px-16 lg:px-14 text-white overflow-hidden"
+      className="relative bg-[#1c1e30cb] pt-30 pb-28 px-4 sm:px-6 md:px-16 lg:px-14 text-white overflow-hidden"
     >
       {/* === Top Wave === */}
       <svg

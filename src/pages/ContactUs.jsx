@@ -4,8 +4,10 @@ import LocationMap from "../components/LocationMap";
 const ContactUs = () => {
   return (
     <>
-      <ContactUsSection />
-      <LocationMap />
+      <div className="pt-14 pb-20">
+        <ContactUsSection />
+        <LocationMap />
+      </div>
     </>
   );
 };
