@@ -4,7 +4,7 @@ import LocationMap from "../components/LocationMap";
 const ContactUs = () => {
   return (
     <>
-      <div className="pt-14 pb-20">
+      <div className="pt-6 pb-20">
         <ContactUsSection />
         <LocationMap />
       </div>

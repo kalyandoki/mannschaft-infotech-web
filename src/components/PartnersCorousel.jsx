@@ -57,7 +57,7 @@ function partnersCorousel() {
         centerSlidePercentage={20.33}
         swipeable
         emulateTouch
-        showIndicators={true}
+        showIndicators={false}
         dynamicHeight={false}
       >
         {images.map((img, index) => (

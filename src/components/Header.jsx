@@ -1,10 +1,20 @@
 import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Events, scroller, Link as ScrollLink } from "react-scroll";
 import { useAppContext } from "../context/AppContext";
 import logo from "../assets/images/mannschaft logo.png";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
-const navLinks = [
-  { to: "products-services", label: "Products & Services" },
+const getNavLinks = (isPopupOpen) => [
+  {
+    to: "products-services",
+    label: (
+      <span className="flex items-center gap-2">
+        Products & Services{" "}
+        {isPopupOpen ? <AiFillCaretUp /> : <AiFillCaretDown />}
+      </span>
+    ),
+  },
   { to: "why-us", label: "Why Us" },
   { to: "our-works", label: "Our Works" },
   { to: "partner-with-us", label: "Partner With Us" },
@@ -12,8 +22,15 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const { isMobileMenuOpen, toggleMenu, closeMenu, toggleServicesPopup } =
-    useAppContext();
+  const {
+    isMobileMenuOpen,
+    toggleMenu,
+    closeMenu,
+    toggleServicesPopup,
+    isServicesPopupVisible,
+  } = useAppContext();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const sectionTitles = {
@@ -54,11 +71,23 @@ const Header = () => {
   }, []);
 
   const handleDesktopClick = (to) => {
+    // closeMenu();
+    // if (to === "products-services") {
+    //   toggleServicesPopup();
+    // } else {
+    //   toggleServicesPopup(false);
+    // }
     closeMenu();
-    if (to === "products-services") {
-      toggleServicesPopup();
+    toggleServicesPopup(to === "products-services");
+
+    if (location.pathname !== "/") {
+      navigate(`/#${to}`);
     } else {
-      toggleServicesPopup(false);
+      scroller.scrollTo(to, {
+        smooth: true,
+        duration: 600,
+        offset: -80,
+      });
     }
   };
 
@@ -71,15 +100,16 @@ const Header = () => {
     }
   };
 
+  const navLinks = getNavLinks(isServicesPopupVisible);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#f5f4f0c6] shadow-md backdrop-blur-md font-bold">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo */}
         <ScrollLink
           to="home"
-          smooth
+          smooth={true}
           spy={true}
-          isDynamic={true}
           offset={-30}
           duration={200}
           onClick={closeMenu}
@@ -97,20 +127,19 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-serif font-bold">
           {navLinks.map(({ to, label }) => (
-            <ScrollLink
+            <Link
               key={to}
-              to={to}
+              to={`/#${to}`}
               spy={true}
               smooth={true}
               offset={-30}
-              isDynamic={true}
               duration={200}
               onClick={() => handleDesktopClick(to)}
               activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black active:text-red-500 transition duration-300"
             >
               {label}
-            </ScrollLink>
+            </Link>
           ))}
         </nav>
 
@@ -136,20 +165,18 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-indigo-700 px-4 py-6 space-y-3 font-serif font-bold flex flex-col items-center">
           {navLinks.map(({ to, label }) => (
-            <ScrollLink
+            <Link
               key={to}
-              to={to}
+              to={`/#${to}`}
               spy={true}
               smooth={true}
               offset={-30}
-              isDynamic={true}
               duration={200}
               onClick={() => handleMobileClick(to)}
-              activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 animate-bounce"
               className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
               {label}
-            </ScrollLink>
+            </Link>
           ))}
           <a
             href="https://shop.mannschaftit.com/"

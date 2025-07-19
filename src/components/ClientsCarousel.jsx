@@ -48,10 +48,10 @@ const ClientsCarousel = () => {
         showThumbs={false}
         showStatus={false}
         centerMode={true}
+        showIndicators={false}
         centerSlidePercentage={20.33}
         swipeable
         emulateTouch
-        showIndicators={true}
         dynamicHeight={false}
       >
         {images.map((img, index) => (
