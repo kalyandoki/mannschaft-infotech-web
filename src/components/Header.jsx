@@ -28,6 +28,7 @@ const Header = () => {
     closeMenu,
     toggleServicesPopup,
     isServicesPopupVisible,
+    activeSectionHead,
   } = useAppContext();
 
   const navigate = useNavigate();
@@ -56,7 +57,7 @@ const Header = () => {
         scroller.scrollTo(hash, {
           smooth: true,
           duration: 600,
-          offset: -80,
+          offset: -30,
         });
       }, 200);
     }
@@ -89,6 +90,11 @@ const Header = () => {
         offset: -80,
       });
     }
+
+    const el = document.getElementById(to);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   const handleMobileClick = (to) => {
@@ -103,8 +109,8 @@ const Header = () => {
   const navLinks = getNavLinks(isServicesPopupVisible);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#f5f4f0c6] shadow-md backdrop-blur-md font-bold">
-      <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <ScrollLink
           to="home"
@@ -115,11 +121,11 @@ const Header = () => {
           onClick={closeMenu}
           className="cursor-pointer"
         >
-          <div className="w-16 h-16 md:w-24 md:h-24 rounded-full p-[3px] bg-gradient-to-tr from-pink-300 via-yellow-300 to-purple-400 animate-bounce hover:animate-none transition duration-200">
+          <div className="w-16 h-26 md:w-50 md:h-30 rounded-full ">
             <img
               src={logo}
               alt="Mannschaft Logo"
-              className="w-full h-full object-cover rounded-full shadow-md"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         </ScrollLink>
@@ -130,13 +136,11 @@ const Header = () => {
             <Link
               key={to}
               to={`/#${to}`}
-              spy={true}
-              smooth={true}
-              offset={-30}
-              duration={200}
               onClick={() => handleDesktopClick(to)}
-              activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black active:text-red-500 transition duration-300"
+              // activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
+              className={`cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full transition duration-300 hover:bg-[#06c26dbf] hover:text-black ${
+                activeSectionHead === to ? "text-[#ed3b1b]" : ""
+              }`}
             >
               {label}
             </Link>

@@ -7,19 +7,25 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gradient-to-tr from-[#383787] via-[#78636e] to-[#5e6c65] text-white px-4 py-10 md:px-20 relative">
+    <footer className="w-full bg-[#0f1d44f1] text-white px-4 py-10 md:px-20 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm sm:text-base">
         {/* Contact Info */}
         <div>
-          <h2 className="text-xl font-bold text-[#f0c5d8] mb-4 font-serif">
+          <h2 className="text-xl font-bold text-[#fff]  mb-4 font-serif hover:text-yellow-400">
             Contact Us
           </h2>
-          <ul className="space-y-1 font-mono text-white leading-relaxed font-medium">
-            <li>🏢 Pallaki Enclave, Plot No 44</li>
-            <li>3rd Floor, Municipal Plots</li>
-            <li>Bapuji Nagar, Udayagiri Road</li>
-            <li>Kavali, Nellore Dist - 524201</li>
-            <li>Andhra Pradesh, India</li>
+          <hr />
+          <br />
+          <ul className="space-y-2 font-light text-white leading-relaxed">
+            <li className="hover:text-red-400">
+              🏢 Pallaki Enclave, Plot No 44
+            </li>
+            <li className="hover:text-red-400">3rd Floor, Municipal Plots</li>
+            <li className="hover:text-red-400">Bapuji Nagar, Udayagiri Road</li>
+            <li className="hover:text-red-400">
+              Kavali, Nellore Dist - 524201
+            </li>
+            <li className="hover:text-red-400">Andhra Pradesh, India</li>
             <li className="mt-2">📞 +91 7036356760</li>
             <li>
               📧{" "}
@@ -36,59 +42,70 @@ const Footer = () => {
         {/* Services */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <h3 className="text-lg font-bold text-yellow-200 mb-2 font-serif">
+            <h3 className="text-lg font-bold text-[#fff] mb-2 font-serif hover:text-yellow-500">
               IT Infra
             </h3>
-            <ul className="text-white font-mono space-y-1">
-              <li>Hardware Services</li>
-              <li>Networking Services</li>
-              <li>Cloud & Infra</li>
-              <li>Security & Surveillance</li>
-              <li>Printer Services</li>
-              <li>Multimedia</li>
+            <hr />
+            <br />
+            <ul className="text-white font-light space-y-2 ">
+              <li className="hover:text-red-400">Hardware Services</li>
+              <li className="hover:text-red-400">Networking Services</li>
+              <li className="hover:text-red-400">Cloud & Infra</li>
+              <li className="hover:text-red-400">Security & Surveillance</li>
+              <li className="hover:text-red-400">Printer Services</li>
+              <li className="hover:text-red-400">Multimedia</li>
             </ul>
-            <h3 className="mt-4 text-lg font-bold text-yellow-200 mb-2 font-serif">
+            <h3 className="mt-4 text-lg font-bold text-[#fff] mb-2 font-serif hover:text-yellow-500">
               Consulting
             </h3>
-            <ul className="text-white font-mono space-y-1">
-              <li>Leadership Hiring</li>
-              <li>Lateral Recruitment</li>
-              <li>RPO (Shared)</li>
+            <hr />
+            <br />
+            <ul className="text-white font-light space-y-2 ">
+              <li className="hover:text-red-400">Leadership Hiring</li>
+              <li className="hover:text-red-400">Lateral Recruitment</li>
+              <li className="hover:text-red-400">RPO (Shared)</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold text-yellow-200 mb-2 font-serif">
+            <h3 className="text-lg font-bold text-[#fff] mb-2 font-serif hover:text-yellow-500">
               Software
             </h3>
-            <ul className="text-white font-mono space-y-1">
-              <li>UX / UI Design</li>
-              <li>UI Development</li>
-              <li>iOS / Android Apps</li>
-              <li>Motion Graphics</li>
-              <li>Augmented Reality</li>
+            <hr />
+            <br />
+            <ul className="text-white font-light space-y-2 ">
+              <li className="hover:text-red-400">UX / UI Design</li>
+              <li className="hover:text-red-400">UI Development</li>
+              <li className="hover:text-red-400">iOS / Android Apps</li>
+              <li className="hover:text-red-400">Motion Graphics</li>
+              <li className="hover:text-red-400">Augmented Reality</li>
             </ul>
-            <h3 className="mt-4 text-lg font-bold text-yellow-200 mb-2 font-serif">
+            <h3 className="mt-4 text-lg font-bold text-[#fff] mb-2 font-serif hover:text-red-400">
               Digital
             </h3>
-            <ul className="text-white font-mono space-y-1">
-              <li>SEO & Ads</li>
-              <li>Email Marketing</li>
-              <li>Social Media</li>
+            <hr />
+            <br />
+            <ul className="text-white font-light space-y-2 ">
+              <li className="hover:text-red-400">SEO & Ads</li>
+              <li className="hover:text-red-400">Email Marketing</li>
+              <li className="hover:text-red-400">Social Media</li>
             </ul>
           </div>
         </div>
 
         {/* Social Icons */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold text-[#f6cbde] mb-4 font-serif">
+          <h2 className="text-xl font-bold text-[#fff]  mb-4 font-serif hover:text-yellow-500">
             Follow Us
           </h2>
+
+          <hr />
+          <br />
           <div className="flex justify-center md:justify-start gap-5 text-black text-2xl">
             <a
               href="https://www.facebook.com/Mannschaft.IT/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-400 bg-white animate-pulse rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
+              className="hover:text-blue-400 bg-white  rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
             >
               <FaFacebookF />
             </a>
@@ -96,7 +113,7 @@ const Footer = () => {
               href="https://www.youtube.com/@mannschaftit/shorts"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-red-500 bg-white animate-pulse rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
+              className="hover:text-red-400 bg-white  rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
             >
               <FaYoutube />
             </a>
@@ -104,7 +121,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/mannschaft-infotech/posts/?feedView=all"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-500 animate-pulse bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
+              className="hover:text-blue-400  bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
             >
               <FaLinkedinIn />
             </a>
@@ -112,7 +129,7 @@ const Footer = () => {
               href="https://www.instagram.com/mannschaft_it/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-pink-500 animate-pulse bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
+              className="hover:text-pink-400  bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -120,7 +137,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center mt-10 pt-6 font-mono border-t border-gray-400 text-gray-300 text-sm">
+      <div className="text-center mt-10 pt-6 font-light border-t border-gray-400 text-gray-300 text-sm">
         © {new Date().getFullYear()} Mannschaft Infotech. All rights reserved.
       </div>
     </footer>
