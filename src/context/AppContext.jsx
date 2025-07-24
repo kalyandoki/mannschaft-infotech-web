@@ -102,6 +102,7 @@ export const AppProvider = ({ children }) => {
   const [selectedWork, setSelectedWork] = useState(null);
   const [activeSectionHead, setActiveSectionHead] = useState("");
   const [showAll, setShowAll] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -162,6 +163,8 @@ export const AppProvider = ({ children }) => {
         setActiveSectionHead,
         showAll,
         toggleShowAll,
+        activeIndex,
+        setActiveIndex,
       }}
     >
       {children}

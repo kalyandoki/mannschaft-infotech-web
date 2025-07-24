@@ -64,7 +64,7 @@ const SolutionSection = () => {
         {values.map((value, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-2xl p-8 text-left hover:scale-105 transform transition duration-300 hover:shadow-2xl text-gray-800 hover:bg-[#ed3b1b] hover:text-white"
+            className="bg-white shadow-xl rounded-2xl p-8 text-left hover:scale-105 transform transition duration-300 hover:shadow-2xl text-gray-800 hover:bg-[#ed3a1bcf] hover:text-white"
           >
             {value.icon}
             <h3 className="text-xl sm:text-3xl font-bold mb-3 ">
