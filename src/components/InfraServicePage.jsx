@@ -11,7 +11,7 @@ const InfraServicePage = ({ pageIndex }) => {
 
   return (
     <section
-      className="w-full h-[70%] pt-[16%] bg-cover bg-center flex items-end justify-start text-white p-8"
+      className="w-full h-[60%] pt-[9%] bg-cover bg-center flex items-end justify-start text-white p-8"
       style={{
         backgroundImage: `url(${page.bgImage})`,
       }}

@@ -9,7 +9,7 @@ const OurWorks = () => (
       id="our-works"
       className="py-14 bg-gray-50 text-center pt-18 pb-20"
     >
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 font-serif">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-roboto">
         Our Works
       </h2>
       <WorksFilter />

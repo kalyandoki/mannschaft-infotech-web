@@ -1,3 +1,4 @@
+import SolutionSection from "../components/SolutionSection";
 import ValuesSection from "../components/ValuesSection";
 import VisionMission from "../components/VisionMission";
 import WhyUsSection from "../components/WhyUsSection";
@@ -8,6 +9,7 @@ function WhyUs() {
       <WhyUsSection />
       <VisionMission />
       <ValuesSection />
+      <SolutionSection />
     </div>
   );
 }

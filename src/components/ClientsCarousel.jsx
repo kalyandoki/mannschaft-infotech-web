@@ -36,7 +36,7 @@ const images = [
 const ClientsCarousel = () => {
   return (
     <div className="max-w-7xl mx-auto pt-20 px-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 font-serif">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-roboto">
         Our Clients
       </h2>
       <Carousel
@@ -57,13 +57,18 @@ const ClientsCarousel = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className="flex items-center justify-center px-2 py-4 sm:px-4 sm:py-4 md:px-6 md:py-5 lg:px-6 lg:py-6"
+            className="flex items-center justify-center px-2 py-2 sm:px-4 sm:py-4"
           >
-            <div className="w-24 sm:w-28 md:w-32 lg:w-36 h-20 sm:h-24 md:h-28 lg:h-32 bg-white rounded-xl  hover:shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <div
+              className="w-36 sm:w-44 md:w-52 lg:w-60 h-28 sm:h-32 md:h-36 lg:h-44 
+            rounded-2xl 
+              transition-transform duration-300 ease-in-out transform hover:scale-105 
+              flex items-center justify-center"
+            >
               <img
                 src={img}
                 alt={`Client Logo ${index + 1}`}
-                className="max-h-full max-w-full object-contain"
+                className="w-full h-full object-contain transition duration-300"
               />
             </div>
           </div>

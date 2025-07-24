@@ -21,6 +21,8 @@ import CloudPage from "./pages/CloudPage";
 import SurveillancePage from "./pages/SurveillancePage";
 import PrinterPage from "./pages/PrinterPage";
 import MultimediaPage from "./pages/MultimediaPage";
+import ReviewSummarySection from "./components/ReviewSummarySection";
+import SolutionsViewPage from "./pages/SolutionsViewPage";
 
 function App() {
   const location = useLocation();
@@ -50,6 +52,7 @@ function App() {
           <Route path="/surveillance-security" element={<SurveillancePage />} />
           <Route path="/printer-services" element={<PrinterPage />} />
           <Route path="/multimedia-services" element={<MultimediaPage />} />
+          <Route path="/solutions" element={<SolutionsViewPage />} />
 
           {/* Home Page with All Sections */}
           <Route
@@ -61,7 +64,8 @@ function App() {
                   <CarouselComponent />
                   <VideoModal />
                   <WelcomeSection />
-                  <ServicesGrid />
+                  <ReviewSummarySection />
+                  {/* <ServicesGrid /> */}
                 </section>
 
                 <section id="home">

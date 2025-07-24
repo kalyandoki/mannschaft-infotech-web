@@ -1,3 +1,4 @@
+import ContactWithUs from "../components/ContactWithUs";
 import InfraServicePage from "../components/InfraServicePage";
 import ManagedITBenefits from "../components/ManagedITBenefits";
 import ManagedITServicesLeftImage from "../components/ManagedITServicesLeftImage";
@@ -10,6 +11,7 @@ export default function SurveillancePage() {
       <ManagedITBenefits pageIndex={3} />
       <ManagedITServicesLeftImage pageIndex={3} />
       <PerformanceAndServices />
+      <ContactWithUs />
     </>
   );
 }

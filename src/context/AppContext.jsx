@@ -81,6 +81,16 @@ const infraPagesData = [
     img2: mul2,
     img3: mul1,
   },
+  {
+    name: "Solutions",
+    heading: "SoftWare Solutions",
+    description:
+      "Enhance your business communication with state-of-the-art multimedia setups including projectors, displays, and AV systems.",
+    buttonText: "Schedule a Free Consultation",
+    bgImage: mul3,
+    img2: mul2,
+    img3: mul1,
+  },
 ];
 
 export const AppProvider = ({ children }) => {
@@ -91,6 +101,7 @@ export const AppProvider = ({ children }) => {
   const [filter, setFilter] = useState("All");
   const [selectedWork, setSelectedWork] = useState(null);
   const [activeSectionHead, setActiveSectionHead] = useState("");
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -111,6 +122,10 @@ export const AppProvider = ({ children }) => {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+
+  const toggleShowAll = () => {
+    setShowAll((prev) => !prev);
+  };
 
   const toggleMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMobileMenuOpen(false);
@@ -145,6 +160,8 @@ export const AppProvider = ({ children }) => {
         infraPagesData,
         activeSectionHead,
         setActiveSectionHead,
+        showAll,
+        toggleShowAll,
       }}
     >
       {children}

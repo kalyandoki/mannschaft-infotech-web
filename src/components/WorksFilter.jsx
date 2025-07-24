@@ -14,8 +14,8 @@ const WorksFilter = () => {
             onClick={() => setFilter(f)}
             className={`px-4 py-2 rounded-full font-semibold transition ${
               filter === f
-                ? "bg-purple-600 text-white shadow-lg"
-                : "bg-gray-200 hover:bg-purple-100 text-gray-800"
+                ? "bg-[#ed3b1b] text-white shadow-lg"
+                : "bg-gray-200 hover:bg-[#ed3a1b5d] text-gray-800"
             }`}
           >
             {f}

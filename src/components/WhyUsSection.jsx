@@ -1,60 +1,72 @@
 import aboutImg from "../assets/images/mannschaft logo.png";
-import manojsir from "../assets/images/manoj-sir-ceo.jpg";
+import manojsir from "../assets/images/ceo2.jpg";
 function WhyUsSection() {
   return (
     <section
-      id="why-us"
-      className="relative  bg-cover bg-center h-[650px] md:h-[660px] w-full md:pt-30 pt-10 pb-28 px-2 sm:px-6 md:px-10 lg:px-10 text-white md:overflow-hidden overflow-auto"
+      className="relative p-15 bg-[linear-gradient(to_top,#ec2028,#236fb4,#34d399,#fdbd1b)] text-white overflow-hidden"
       style={{ backgroundImage: `url(${manojsir})` }}
     >
-      {/* === Top Wave === */}
-      <svg
-        className="absolute top-0 left-0 w-full"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 150"
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="#ffffff"
-          fillOpacity="1"
-          d="M0,64L48,74.7C96,85,192,107,288,117.3C384,128,480,128,576,106.7C672,85,768,43,864,32C960,21,1056,43,1152,64C1248,85,1344,107,1392,117.3L1440,128L1440,0L0,0Z"
-        ></path>
-      </svg>
+      {/* === TOP CURVE FIXED === */}
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10 -mt-px">
+        <svg
+          className="relative block w-full h-[100px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="currentColor"
+            className="text-white"
+            d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"
+          />
+        </svg>
+      </div>
 
-      {/* === Content === */}
-      <div className="relative z-10 max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:bg-[#39434161] p-6 m-6 rounded-3xl">
+      {/* === MAIN CONTENT === */}
+      <div className="relative z-10 max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center p-6 m-6 rounded-3xl">
         {/* === Left Text === */}
-        <div className="text-gray-100 font-serif space-y-6 text-base md:text-xl leading-relaxed">
+        <div className="text-[#fff] space-y-4 text-base md:text-lg leading-relaxed">
+          {/* <h2 className="text-2xl md:text-3xl font-bold text-center text-[#ed3b1b]">
+            About Mannschaft Infotech
+          </h2> */}
           <p>
-            We bring our experience and knowledge from various skilled and
-            experienced IT professionals who are working towards creating our
-            presence and to be known as a preferred IT partner PAN India.
-            <br className="hidden md:block" />
-            Client satisfaction means business to us and it is what drives us
-            forward since we were Mannschaft-ed as a company.
+            At <strong className="text-[#fff]">Mannschaft Infotech</strong>, we
+            bring together the expertise and insights of highly skilled IT
+            professionals with a shared mission — to establish ourselves as a{" "}
+            <strong className="text-[#fff]">
+              trusted IT partner across PAN India
+            </strong>
+            . Our commitment to{" "}
+            <strong className="text-[#fff]">client satisfaction</strong> is not
+            just a goal; it’s the driving force behind everything we do. Since
+            our inception, delivering value through quality service has been at
+            the heart of our journey.
           </p>
           <p>
-            <strong className="text-indigo-300">Mannschaft Infotech</strong> is
-            headed by <strong className="text-pink-400">Mr. Manoj Kumar</strong>{" "}
-            who brings in more than 10 years of experience in the IT space. He
-            is a subject matter expert and has worked in several multinational
-            IT companies, earning customer trust through excellent service
-            delivery.
-            <br />
-            Reach him at{" "}
+            Our foundation is guided by the leadership of{" "}
+            <strong className="text-[#fff]">Mr. Manoj Kumar</strong>, a seasoned
+            expert with over{" "}
+            <strong className="text-[#fff]">10 years of experience</strong> in
+            the IT industry. His background includes working with leading
+            multinational companies, where he consistently earned client trust
+            through exceptional service delivery and deep domain knowledge.
+          </p>
+          <p>
+            For any inquiries or to connect with our leadership, reach out to
+            Mr. Manoj Kumar at <br />
+            📧{" "}
             <a
               href="mailto:manoj.p@mannschaftit.com"
               className="text-indigo-400 underline hover:text-indigo-300"
             >
               manoj.p@mannschaftit.com
             </a>
-            .
           </p>
         </div>
 
         {/* === Right Image === */}
-        <div className="flex justify-center">
-          <div className="relative w-54 sm:w-62  md:w-70 lg:w-70 rounded-3xl md:overflow-hidden overflow-auto">
+        <div className="flex justify-center  bg-[#fff] rounded-4xl">
+          <div className="relative w-44 sm:w-52  md:w-60 lg:w-60 rounded-3xl md:overflow-hidden overflow-auto">
             <img
               src={aboutImg}
               alt="Mannschaft Team"
@@ -64,19 +76,21 @@ function WhyUsSection() {
         </div>
       </div>
 
-      {/* === Bottom Wave === */}
-      <svg
-        className="absolute bottom-0 left-0 w-full"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1350 90"
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="#ffffff"
-          fillOpacity="1"
-          d="M0,0L48,16C96,32,192,64,288,69.3C384,75,480,53,576,37.3C672,21,768,11,864,21.3C960,32,1056,64,1152,74.7C1248,85,1344,75,1392,69.3L1440,64L1440,160L0,160Z"
-        ></path>
-      </svg>
+      {/* === BOTTOM CURVE === */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10">
+        <svg
+          className="relative block w-full h-[100px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="currentColor"
+            className="text-white"
+            d="M0,20 C360,80 1080,0 1440,60 L1440,100 L0,100 Z"
+          />
+        </svg>
+      </div>
     </section>
   );
 }

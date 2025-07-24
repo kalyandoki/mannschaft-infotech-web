@@ -1,3 +1,4 @@
+import ContactWithUs from "../components/ContactWithUs";
 import InfraServicePage from "../components/InfraServicePage";
 import ManagedITBenefits from "../components/ManagedITBenefits";
 import ManagedITServicesLeftImage from "../components/ManagedITServicesLeftImage";
@@ -9,6 +10,7 @@ export default function CloudPage() {
       <ManagedITBenefits pageIndex={2} />
       <ManagedITServicesLeftImage pageIndex={2} />
       <PerformanceAndServices />
+      <ContactWithUs />
     </>
   );
 }

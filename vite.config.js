@@ -17,6 +17,9 @@ export default defineConfig({
       animation: {
         "scroll-x": "scrollX 30s linear infinite",
       },
+      fontFamily: {
+        roboto: ['"Roboto Condensed"', "sans-serif"],
+      },
     },
   },
   plugins: [react(), tailwindcss()],

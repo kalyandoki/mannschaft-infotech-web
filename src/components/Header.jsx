@@ -109,7 +109,7 @@ const Header = () => {
   const navLinks = getNavLinks(isServicesPopupVisible);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <ScrollLink
@@ -131,14 +131,14 @@ const Header = () => {
         </ScrollLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-serif font-bold">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto font-bold">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
               to={`/#${to}`}
               onClick={() => handleDesktopClick(to)}
               // activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className={`cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full transition duration-300 hover:bg-[#06c26dbf] hover:text-black ${
+              className={`cursor-pointer px-2 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full transition duration-300  hover:text-[#ed3b1b] ${
                 activeSectionHead === to ? "text-[#ed3b1b]" : ""
               }`}
             >
@@ -159,7 +159,7 @@ const Header = () => {
           href="https://shop.mannschaftit.com/"
           target="_blank"
           rel="noreferrer"
-          className="ml-2 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block"
+          className="ml-2 bg-[#ed3b1b] text-white font-semibold  px-6 py-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block font-roboto"
         >
           Shop
         </a>
@@ -186,7 +186,7 @@ const Header = () => {
             href="https://shop.mannschaftit.com/"
             target="_blank"
             rel="noreferrer"
-            className="block w-full text-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+            className="block w-full text-center bg-[#ed3b1b] text-white font-semibold px-2 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 font-roboto"
           >
             Shop
           </a>

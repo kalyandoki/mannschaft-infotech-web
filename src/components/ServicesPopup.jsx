@@ -38,7 +38,7 @@ const ServicesPopup = () => {
   if (!isServicesPopupVisible) return null;
 
   return (
-    <div className="fixed top-[78px] md:top-28 left-1/2 transform -translate-x-1/2 z-50 w-[100%] ">
+    <div className="fixed top-[78px] md:top-28 left-1/2 transform -translate-x-1/2 z-50 w-[100%] font-roboto">
       <div
         ref={popupRef}
         className="relative bg-[#fffffff8] text-[#0d0d1bf7]   
@@ -55,8 +55,10 @@ const ServicesPopup = () => {
           <IoClose />
         </button> */}
 
-        <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-6">
-          <span className="text-[#0f1d44] font-serif">Products & Services</span>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+          <span className="text-[#0f1d44] font-roboto">
+            Products & Services
+          </span>
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 text-sm md:text-base leading-relaxed">
@@ -67,36 +69,36 @@ const ServicesPopup = () => {
             </h3>
             <ul className="list-disc list-inside space-y-1">
               <Link to="/hardware-services">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Hardware Services
                 </li>
               </Link>
               <Link to="/networking-services">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Networking Services
                 </li>
               </Link>
 
               <Link to="/cloud-infrastructure">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Cloud & Infrastructure
                 </li>
               </Link>
 
               <Link to="/surveillance-security">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Surveillance Security
                 </li>
               </Link>
 
               <Link to="/printer-services">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Printer Services
                 </li>
               </Link>
 
               <Link to="/multimedia-services">
-                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                   Multimedia Services
                 </li>
               </Link>
@@ -109,22 +111,22 @@ const ServicesPopup = () => {
               Software Services
             </h3>
             <ul className="list-disc list-inside space-y-1">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 UX Designing
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 UI Designing
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 UI Development
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[90%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[120%]">
                 iOS/Android App Development
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Motion Graphics
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Augmented Reality
               </li>
             </ul>
@@ -136,16 +138,16 @@ const ServicesPopup = () => {
               IT Consulting Services
             </h3>
             <ul className="list-disc list-inside space-y-1 mb-4">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Leadership Recruitment
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Lateral Recruitment
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Fresher Recruitment
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 RPO (Shared Services)
               </li>
             </ul>
@@ -157,16 +159,16 @@ const ServicesPopup = () => {
               Digital Marketing
             </h3>
             <ul className="list-disc list-inside space-y-1">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 SEO
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Advertising
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Social Media Marketing
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Email Marketing
               </li>
             </ul>
@@ -178,22 +180,22 @@ const ServicesPopup = () => {
               Industry Focus
             </h3>
             <ul className="list-disc list-inside space-y-2">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Industry Manufacturing
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Transportation Logistics
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Healthcare
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Banks & Insurance
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%]">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Consulting Providers
               </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold hover:bg-[#7cb6c8] rounded-lg w-[80%] mb-2">
+              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%] mb-2">
                 Non Profit
               </li>
             </ul>

@@ -42,7 +42,7 @@ const images = [
 function partnersCorousel() {
   return (
     <div className="max-w-7xl mx-auto pt-20 px-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 font-serif">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-roboto">
         Our partners
       </h2>
       <Carousel

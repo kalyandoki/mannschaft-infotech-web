@@ -1,3 +1,4 @@
+import ContactWithUs from "../components/ContactWithUs";
 import InfraServicePage from "../components/InfraServicePage";
 import ManagedITBenefits from "../components/ManagedITBenefits";
 import ManagedITServicesLeftImage from "../components/ManagedITServicesLeftImage";
@@ -9,6 +10,7 @@ export default function HardwarePage() {
       <ManagedITBenefits pageIndex={0} />
       <ManagedITServicesLeftImage pageIndex={0} />
       <PerformanceAndServices />
+      <ContactWithUs />
     </>
   );
 }
