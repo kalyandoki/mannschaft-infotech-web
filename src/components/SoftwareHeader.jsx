@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Events, scroller, Link as ScrollLink } from "react-scroll";
 import { useAppContext } from "../context/AppContext";
 import logo from "../assets/images/mannschaft logo.png";
+import psLogo from "../assets/images/ps-logo.png";
+
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
 const getNavLinks = () => [
@@ -10,18 +12,21 @@ const getNavLinks = () => [
     to: "products-services",
     label: (
       <span className="flex items-center gap-2">
-        Products & Services
+        <img src={psLogo} alt="Products & Services Logo" className="w-6 h-6" />
         {/* {isPopupOpen ? <AiFillCaretUp /> : <AiFillCaretDown />} */}
       </span>
     ),
   },
-  { to: "why-us", label: "Why Us" },
-  { to: "our-works", label: "Our Works" },
-  { to: "partner-with-us", label: "Partner With Us" },
-  { to: "contact-us", label: "Contact Us" },
+
+  { to: "ux-design", label: "UX" },
+  { to: "ui-design", label: "UI" },
+  { to: "ui-development", label: "UI Development" },
+  { to: "ios-app-dev", label: "iOS/Android" },
+  { to: "motion-graphics", label: "Motion Graphics" },
+  { to: "augmented-reality", label: "Augmented Reality" },
 ];
 
-const Header = () => {
+const SoftwareHeader = () => {
   const {
     isMobileMenuOpen,
     toggleMenu,
@@ -36,17 +41,19 @@ const Header = () => {
   useEffect(() => {
     const sectionTitles = {
       "products-services": "Products & Services",
-      "why-us": "Why Us",
-      "our-works": "Our Works",
-      "partner-with-us": "Partner With Us",
-      "contact-us": "Contact Us",
+      "ux-design": "UX ",
+      "ui-design": "UI ",
+      "ui-development": "UI Development",
+      "ios-app-dev": "iOS/Android",
+      "motion-graphics": "Motion Graphics",
+      "augmented-reality": "Augmented Reality",
       home: "Home",
     };
 
     const handleSetActive = (to) => {
       const sectionName = sectionTitles[to] || "Mannschaft Infotech";
       document.title = `Mannschaft Infotech | ${sectionName}`;
-      window.history.replaceState(null, "", `/#${to}`);
+      window.history.replaceState(null, "", `/${to}`);
     };
 
     Events.scrollEvent.register("begin", handleSetActive);
@@ -114,7 +121,7 @@ const Header = () => {
   const navLinks = getNavLinks(isServicesPopupVisible);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-60 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-medium font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <ScrollLink
@@ -127,7 +134,7 @@ const Header = () => {
           className="cursor-pointer"
         >
           <Link to="/#home" onClick={closeMenu}>
-            <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
+            <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
               <img
                 src={logo}
                 alt="Mannschaft Logo"
@@ -138,14 +145,14 @@ const Header = () => {
         </ScrollLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto">
+        <nav className="hidden md:flex items-center gap-2 lg:gap-10 font-roboto">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
-              to={`/#${to}`}
+              to={`/${to}`}
               onClick={() => handleDesktopClick(to)}
               // activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className={`cursor-pointer px-2 py-2 text-[#000]  text-base lg:text-lg rounded-full transition duration-300  hover:text-[#ed3b1b] ${
+              className={`cursor-pointer text-[#000] lg:text-md rounded-full transition duration-300  hover:text-[#ed3b1b] ${
                 activeSectionHead === to ? "text-[#ed3b1b]" : ""
               }`}
             >
@@ -166,7 +173,7 @@ const Header = () => {
           href="https://shop.mannschaftit.com/"
           target="_blank"
           rel="noreferrer"
-          className="ml-2 bg-[#ed3b1b] text-white   px-6 py-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block font-roboto"
+          className="m-2 bg-[#ed3b1b] text-white font-semibold  px-6 py-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block font-roboto"
         >
           Shop
         </a>
@@ -184,7 +191,7 @@ const Header = () => {
               offset={-30}
               duration={200}
               onClick={() => handleMobileClick(to)}
-              className="cursor-pointer px-4 py-2 text-[#000] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
               {label}
             </Link>
@@ -193,7 +200,7 @@ const Header = () => {
             href="https://shop.mannschaftit.com/"
             target="_blank"
             rel="noreferrer"
-            className="block w-full text-center bg-[#ed3b1b] text-white font-semibold px-2 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 font-roboto"
+            className="block w-full m-2 text-center bg-[#ed3b1b] text-white font-semibold px-2 py-2 rounded-lg shadow-md hover:shadow-lg transition duration-300 font-roboto "
           >
             Shop
           </a>
@@ -203,4 +210,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SoftwareHeader;

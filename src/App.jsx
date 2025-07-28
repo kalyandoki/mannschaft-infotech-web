@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Link, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Header from "./components/Header";
@@ -23,8 +23,18 @@ import PrinterPage from "./pages/PrinterPage";
 import MultimediaPage from "./pages/MultimediaPage";
 import ReviewSummarySection from "./components/ReviewSummarySection";
 import SolutionsViewPage from "./pages/SolutionsViewPage";
+import { useAppContext } from "./context/AppContext";
+import FocusHeader from "./components/FocusHeader";
+import DigitalMarketingHeader from "./components/DigitalMarketingHeader";
+import ItConsultingHeader from "./components/ItConsultingHeader";
+import SoftwareHeader from "./components/SoftwareHeader";
+import ItInfraHeader from "./components/ItInfraHeader";
+import LeadershipRecruitment from "./pages/LeadershipRecruitment";
+import Seo from "./pages/Seo";
+import UxDesign from "./pages/UxDesign";
 
 function App() {
+  const { activeHeader } = useAppContext();
   const location = useLocation();
 
   // Scroll to anchor after navigating back to home
@@ -41,11 +51,101 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <header>
+        {activeHeader === "main" && <Header />}
+        {activeHeader === "itinfra" && (
+          <Link to="/hardware-services">
+            <ItInfraHeader />
+          </Link>
+        )}
+        {activeHeader === "software" && <SoftwareHeader />}
+        {activeHeader === "consulting" && (
+          <Link to="/leadership-recruitment">
+            <ItConsultingHeader />
+          </Link>
+        )}
+        {activeHeader === "marketing" && <DigitalMarketingHeader />}
+        {activeHeader === "focus" && <FocusHeader />}
+      </header>
       <ScrollToTop />
 
       <main className="pt-6 scroll-smooth">
         <Routes>
+          <Route
+            path="/products-services"
+            element={
+              <>
+                <Header />
+                <section id="home">
+                  {/* <HeroSection /> */}
+                  <CarouselComponent />
+                  <VideoModal />
+                  <WelcomeSection />
+                  <ReviewSummarySection />
+                  {/* <ServicesGrid /> */}
+                </section>
+
+                <section id="home">
+                  <ProductsServices />
+                </section>
+
+                <section id="why-us">
+                  <WhyUs />
+                </section>
+
+                <section id="our-works">
+                  <OurWorks />
+                </section>
+
+                <section id="partner-with-us">
+                  <PartnerWithUs />
+                </section>
+
+                <section id="contact-us">
+                  <ContactUs />
+                </section>
+              </>
+            }
+          />
+          <Route
+            path="/home"
+            element={
+              <>
+                <Header />
+                <section id="home">
+                  {/* <HeroSection /> */}
+                  <CarouselComponent />
+                  <VideoModal />
+                  <WelcomeSection />
+                  <ReviewSummarySection />
+                  {/* <ServicesGrid /> */}
+                </section>
+
+                <section id="home">
+                  <ProductsServices />
+                </section>
+
+                <section id="why-us">
+                  <WhyUs />
+                </section>
+
+                <section id="our-works">
+                  <OurWorks />
+                </section>
+
+                <section id="partner-with-us">
+                  <PartnerWithUs />
+                </section>
+
+                <section id="contact-us">
+                  <ContactUs />
+                </section>
+              </>
+            }
+          />
+
+          {/* IT Infra Services */}
           <Route path="/hardware-services" element={<HardwarePage />} />
           <Route path="/networking-services" element={<NetworkingPage />} />
           <Route path="/cloud-infrastructure" element={<CloudPage />} />
@@ -54,11 +154,24 @@ function App() {
           <Route path="/multimedia-services" element={<MultimediaPage />} />
           <Route path="/solutions" element={<SolutionsViewPage />} />
 
+          {/* Software Services */}
+          <Route path="/ux-design" element={<UxDesign />} />
+
+          {/* IT Consulting Pages */}
+          <Route
+            path="/Leadership-Recruitment"
+            element={<LeadershipRecruitment />}
+          />
+
+          {/* Digital Marketing Pages */}
+          <Route path="/seo" element={<Seo />} />
+
           {/* Home Page with All Sections */}
           <Route
             path="/"
             element={
               <>
+                <Header />
                 <section id="home">
                   {/* <HeroSection /> */}
                   <CarouselComponent />

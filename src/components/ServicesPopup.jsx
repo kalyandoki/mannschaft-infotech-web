@@ -1,12 +1,13 @@
 import { useRef, useEffect } from "react";
 import { useAppContext } from "../context/AppContext";
-// import { IoClose } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { FiTarget } from "react-icons/fi";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const ServicesPopup = () => {
-  const { isServicesPopupVisible, setIsServicesPopupVisible } = useAppContext();
+  const { isServicesPopupVisible, setIsServicesPopupVisible, setActiveHeader } =
+    useAppContext();
   const popupRef = useRef();
 
   // Click outside to close
@@ -64,9 +65,14 @@ const ServicesPopup = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 text-sm md:text-base leading-relaxed">
           {/* IT Infra Services */}
           <div>
-            <h3 className="text-lg font-bold text-[#0f1d44] hover:text-[#ed3b1b] mb-2 border-b border-indigo-300 pb-1 ">
-              IT Infra Services
-            </h3>
+            <Link to="/hardware-services">
+              <h3
+                className="text-lg font-bold text-[#0f1d44] hover:text-[#ed3b1b] mb-2 border-b border-indigo-300 pb-1"
+                onClick={() => setActiveHeader("itinfra")}
+              >
+                IT Infra Services
+              </h3>
+            </Link>
             <ul className="list-disc list-inside space-y-1">
               <Link to="/hardware-services">
                 <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
@@ -107,13 +113,20 @@ const ServicesPopup = () => {
 
           {/* Software Services */}
           <div>
-            <h3 className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1">
-              Software Services
-            </h3>
+            <Link to="/ux-design">
+              <h3
+                className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
+                onClick={() => setActiveHeader("software")}
+              >
+                Software Services
+              </h3>
+            </Link>
             <ul className="list-disc list-inside space-y-1">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                UX Designing
-              </li>
+              <Link to="/ux-design">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  UX Designing
+                </li>
+              </Link>
               <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 UI Designing
               </li>
@@ -134,13 +147,20 @@ const ServicesPopup = () => {
 
           {/* IT Consulting */}
           <div>
-            <h3 className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1">
-              IT Consulting Services
-            </h3>
+            <Link to="/leadership-recruitment">
+              <h3
+                className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
+                onClick={() => setActiveHeader("consulting")}
+              >
+                IT Consulting Services
+              </h3>
+            </Link>
             <ul className="list-disc list-inside space-y-1 mb-4">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Leadership Recruitment
-              </li>
+              <Link to="/leadership-recruitment">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Leadership Recruitment
+                </li>
+              </Link>
               <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Lateral Recruitment
               </li>
@@ -155,13 +175,20 @@ const ServicesPopup = () => {
 
           {/* Marketing */}
           <div>
-            <h3 className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1">
-              Digital Marketing
-            </h3>
+            <Link to="/seo">
+              <h3
+                className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
+                onClick={() => setActiveHeader("marketing")}
+              >
+                Digital Marketing
+              </h3>
+            </Link>
             <ul className="list-disc list-inside space-y-1">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                SEO
-              </li>
+              <Link to="/seo">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  SEO
+                </li>
+              </Link>
               <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Advertising
               </li>
@@ -175,7 +202,10 @@ const ServicesPopup = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 pb-1 flex items-center">
+            <h3
+              className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 pb-1 flex items-center"
+              onClick={() => setActiveHeader("focus")}
+            >
               <FiTarget className="text-[#010ED0] text-2xl sm:text-3xl md:text-4xl mr-2" />
               Industry Focus
             </h3>

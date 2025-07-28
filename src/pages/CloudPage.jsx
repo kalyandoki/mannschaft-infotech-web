@@ -47,8 +47,8 @@ export default function CloudPage() {
         Cloud & Infrastructure Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={2} />
-      <ManagedITServicesLeftImage pageIndex={2} />
+      {/* <ManagedITBenefits pageIndex={2} />
+      <ManagedITServicesLeftImage pageIndex={2} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>

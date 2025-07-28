@@ -1,3 +1,10 @@
+// import React from "react";
+
+// function FocusHeader() {
+//   return <div>FocusHeader</div>;
+// }
+
+// export default FocusHeader;
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Events, scroller, Link as ScrollLink } from "react-scroll";
@@ -21,7 +28,7 @@ const getNavLinks = () => [
   { to: "contact-us", label: "Contact Us" },
 ];
 
-const Header = () => {
+const FocusHeader = () => {
   const {
     isMobileMenuOpen,
     toggleMenu,
@@ -114,7 +121,7 @@ const Header = () => {
   const navLinks = getNavLinks(isServicesPopupVisible);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-60 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <ScrollLink
@@ -127,7 +134,7 @@ const Header = () => {
           className="cursor-pointer"
         >
           <Link to="/#home" onClick={closeMenu}>
-            <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
+            <div className="w-16 h-26 md:w-50 md:h-30 rounded-full ">
               <img
                 src={logo}
                 alt="Mannschaft Logo"
@@ -138,14 +145,14 @@ const Header = () => {
         </ScrollLink>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto font-bold">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
               to={`/#${to}`}
               onClick={() => handleDesktopClick(to)}
               // activeClass="bg-gradient-to-tr from-pink-200 via-red-300 to-pink-200 text-blue-800 shadow-md"
-              className={`cursor-pointer px-2 py-2 text-[#000]  text-base lg:text-lg rounded-full transition duration-300  hover:text-[#ed3b1b] ${
+              className={`cursor-pointer px-2 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full transition duration-300  hover:text-[#ed3b1b] ${
                 activeSectionHead === to ? "text-[#ed3b1b]" : ""
               }`}
             >
@@ -166,7 +173,7 @@ const Header = () => {
           href="https://shop.mannschaftit.com/"
           target="_blank"
           rel="noreferrer"
-          className="ml-2 bg-[#ed3b1b] text-white   px-6 py-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block font-roboto"
+          className="ml-2 bg-[#ed3b1b] text-white font-semibold  px-6 py-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 hidden md:block font-roboto"
         >
           Shop
         </a>
@@ -184,7 +191,7 @@ const Header = () => {
               offset={-30}
               duration={200}
               onClick={() => handleMobileClick(to)}
-              className="cursor-pointer px-4 py-2 text-[#000] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
+              className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
               {label}
             </Link>
@@ -203,4 +210,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default FocusHeader;

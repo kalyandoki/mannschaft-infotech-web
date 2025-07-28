@@ -41,8 +41,8 @@ export default function PrinterPage() {
         Networking Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={4} />
-      <ManagedITServicesLeftImage pageIndex={4} />
+      {/* <ManagedITBenefits pageIndex={4} />
+      <ManagedITServicesLeftImage pageIndex={4} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>

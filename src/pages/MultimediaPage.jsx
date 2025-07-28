@@ -40,8 +40,8 @@ export default function MultimediaPage() {
         Networking Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={5} />
-      <ManagedITServicesLeftImage pageIndex={5} />
+      {/* <ManagedITBenefits pageIndex={5} />
+      <ManagedITServicesLeftImage pageIndex={5} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>

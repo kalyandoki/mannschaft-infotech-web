@@ -87,8 +87,8 @@ export default function SurveillancePage() {
         Surveillance & Security Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={3} />
-      <ManagedITServicesLeftImage pageIndex={3} />
+      {/* <ManagedITBenefits pageIndex={3} />
+      <ManagedITServicesLeftImage pageIndex={3} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>

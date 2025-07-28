@@ -1,36 +1,37 @@
 import ContactWithUs from "../components/ContactWithUs";
 import InfraServicePage from "../components/InfraServicePage";
-import ManagedITBenefits from "../components/ManagedITBenefits";
-import ManagedITServicesLeftImage from "../components/ManagedITServicesLeftImage";
+// import ManagedITBenefits from "../components/ManagedITBenefits";
+// import ManagedITServicesLeftImage from "../components/ManagedITServicesLeftImage";
 import PerformanceAndServices from "../components/PerformanceAndServices ";
 import Tabs from "../components/Tabs";
 
-import hard1 from "../assets/mannInfra/office.jpg";
-import hard2 from "../assets/mannInfra/hardware.jpg";
+import hard1 from "../assets/itInfra/hard2.jpg";
+import hard2 from "../assets/itInfra/hard3.jpg";
+import ItInfraHeader from "../components/ItInfraHeader";
 
 const tabData = [
   {
-    tab1: "NEW OFFICE SETUP",
-    data: "Mannschaft Infotech Hardware Support is responsible for installation and maintenance of computers and computer peripherals. we eliminate large capital outlays and ensure IT equipment costs and related maintenance services to qualify as operating expenses.",
-    title: "NEW OFFICE SETUP",
+    tab1: "New Office IT Setup",
+    data: "🛠️ Hardware Support – Mannschaft Infotech\nExpert in installation and maintenance of computers and peripherals.Helps reduce large capital investments with cost-efficient hardware solutions.Ensures all IT equipment and maintenance costs are treated as operating expenses.Offers prompt and reliable support for hardware-related issues and upgrades.Delivers proactive servicing to maximize system uptime and performance.",
+    title: "🏢 New Office IT Setup",
     data2:
-      "We understand that doing business in India can sometimes be a new and challenging process. This is especially true when setting up new offices without your own dedicated IT staff. Mannschaft Infotech can provide New Office IT Set-Up services you can trust and rely on. Our team of expert technical consultants can confidently recommend, support, and implement a wide range of hardware, software, and network systems with your best interests in mind. We can provide you with installation project management as well as long-term IT maintenance and support with our normal IT maintenance package.",
+      "End-to-end IT setup for new offices across India — ideal for businesses without in-house IT teams.\nHassle-free implementation of computers, software, and network infrastructure.\nPersonalized consultation and system recommendations from experienced IT professionals.\nComprehensive project management from planning to installation.\nIncludes long-term maintenance and support under our IT AMC (Annual Maintenance Contract) package.\nScalable and future-ready solutions to grow with your business.",
     img2: hard1,
     reverse: false,
   },
   {
     tab2: "HARDWARE MAINTAINANCE",
-    data: "Our Team of professional engineers maintains your IT systems, so you have more time to focus on your core business.",
-    title: "HARDWARE MAINTAINANCE",
-    data2: `Optimizing Hardware and Software Performance
-Removing Spyware and other invasive software
-System and Software Updates
-Virus Clean Up
-De-fragmenting Disk Data
-IT Trouble Shooting
-Overall System consultation
-Onsite Services`,
-    img2: hard2,
+    // data: "Our Team of professional engineers maintains your IT systems, so you have more time to focus on your core business.",
+    title2: "🔧 Hardware Maintenance",
+    data3: `Preventive Maintenance – Regular checkups to avoid hardware failures.
+Break-Fix Support – Quick repairs or replacements for faulty hardware.
+System Upgrades – Updating outdated components for better performance.
+Peripheral Maintenance – Servicing printers, routers, and other devices.
+Lifecycle Management – Tracking and planning hardware replacements.
+Certified Technicians – Skilled experts ensuring reliable service.
+On-Site & Remote Support – Flexible support options based on your needs.
+Custom AMC Plans – Tailored annual maintenance contracts.`,
+    img3: hard2,
     // title2: "HARDWARE MAINTAINANCE",
     // data3:
     //   "We also provide in-depth hardware diagnostics and repair services...",
@@ -46,8 +47,8 @@ export default function HardwarePage() {
         Hardware Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={0} />
-      <ManagedITServicesLeftImage pageIndex={0} />
+      {/* // <ManagedITBenefits pageIndex={0} />
+      // <ManagedITServicesLeftImage pageIndex={0} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>

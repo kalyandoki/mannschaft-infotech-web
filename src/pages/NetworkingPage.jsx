@@ -11,6 +11,7 @@ import hard2 from "../assets/mannInfra/netP2.jpg";
 import hard3 from "../assets/mannInfra/netP3.jpg";
 import hard4 from "../assets/mannInfra/netP4.jpg";
 import hard5 from "../assets/mannInfra/netP5.jpg";
+import ItInfraHeader from "../components/ItInfraHeader";
 
 const tabData = [
   {
@@ -53,13 +54,14 @@ const tabData = [
 export default function NetworkingPage() {
   return (
     <>
+      <ItInfraHeader />
       <InfraServicePage pageIndex={1} />
       <h1 className="text-right p-6 mr-10 text-4xl font-bold text-[#ec2028] hover:text-[#ec2028]">
         Networking Solutions
       </h1>
       <Tabs tabs={tabData} />
-      <ManagedITBenefits pageIndex={1} />
-      <ManagedITServicesLeftImage pageIndex={1} />
+      {/* <ManagedITBenefits pageIndex={1} />
+      <ManagedITServicesLeftImage pageIndex={1} /> */}
       <PerformanceAndServices />
       <ContactWithUs />
     </>
