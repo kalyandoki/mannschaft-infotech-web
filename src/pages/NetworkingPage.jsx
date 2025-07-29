@@ -6,46 +6,62 @@ import PerformanceAndServices from "../components/PerformanceAndServices ";
 
 import Tabs from "../components/Tabs";
 
-import hard1 from "../assets/mannInfra/netP1.jpg";
-import hard2 from "../assets/mannInfra/netP2.jpg";
-import hard3 from "../assets/mannInfra/netP3.jpg";
-import hard4 from "../assets/mannInfra/netP4.jpg";
-import hard5 from "../assets/mannInfra/netP5.jpg";
+import hard1 from "../assets/mannInfra/netP11.webp";
+import hard2 from "../assets/mannInfra/netP22.webp";
+import hard3 from "../assets/mannInfra/netP44.jpg";
+import hard4 from "../assets/mannInfra/netP33.jpeg";
+import hard5 from "../assets/mannInfra/netP55.jpg";
 import ItInfraHeader from "../components/ItInfraHeader";
 
 const tabData = [
   {
     tab1: "LAN",
-    data: "We take care of all your Networking needs like Cabling, remote monitoring & Network Security issues. Choosing the right type of cabling for your needs, installing it properly and verifying compliance with required standards is one of the keys to getting the most out of your network and telecommunications INVESTMENT.",
-    title: "NEW OFFICE SETUP",
-    data2:
-      "Design, Configure, Build & Integrate are the four key points we keep in mind before executing a solution. Handling data in the best manner means, less burden on business finances, as additional storage comes with additional cost. Our cabling engineers can quickly and affordably cable your new offices, network multiple locations, or simply add a single network or voice drop to your existing infrastructure.\nIT network setup consulting\nPABX system set-up\nCable installation and network system set-up\nInternet set-up\nVoice over Internet Proxy Direct Call Service (VOIP)\nVirtual Private Network (VPN) set-up",
+    data: "",
+    title: "🔌 Robust LAN Solutions for Seamless Office Connectivity",
+    data2: `High-Speed Local Data Flow: Enables fast communication between all devices in your network.
+Enhanced Network Security: Safeguard internal data with controlled, private access.
+Smart Resource Sharing: Share printers, files, and applications efficiently.
+Budget-Friendly Infrastructure: Great value for small to mid-sized businesses.
+Centralized Control: Easily manage users, devices, and network performance.`,
     img2: hard1,
-    title2: "DATA CENTER SETUP & MAINTENANCE",
-    data3:
-      "Mannschaft Infotech is experienced in both Local and Wide Area Network and Telecommunications cabling installation and service, and has the expertise to support all of your cabling requirements.\nWe design Data Center solutions to match your context.\nData Protection\nBackup & High Availability\nDisaster Recovery\nPower & Cooling\nNetworking & Communication\nNetwork Management & Automation\nIntelligent Structured cabling Solution\nRouting / Switching / Wireless Services",
+    title2: "🖧 Local Area Networking Built for Business Efficiency",
+    data3: `Lag-Free Communication: Real-time collaboration through stable, low-latency connections.
+Secure & Enclosed Environment: Keeps sensitive data within your private network.
+Simplified IT Operations: Unified management of connected systems and users.
+Scalable Design: Expand your network as your team or office grows.
+Productivity-Driven Setup: Designed to support smooth daily business operations.`,
     img3: hard2,
     reverse: false,
   },
   {
     tab2: "FIBER",
-    data: "OFC Fiber cable network roll-out significantly complex activity involving outdoor locations and deployment of large amount of manpower and machines. Mannschaft Infotech holds immense expertise in offering Trenching and laying services in OFC Networks, managing end to end activities from designing, planning, executing, testing and handover.We have well experienced professionals they know how to implement Terrestrial and Aerial OFC links, whether in hard rock, soft soil, forest or hilly terrain.",
-    title: "CABLE SPLICING SERVICES",
-    data2:
-      "Our clients can avail Cable Splicing Services from us,which are planned and executed by our skilled and dicated staff members. Our technicians utilize the best components and sophisticated technology machines in rendering these services.\nOur reasonably priced and authentic services are offered as per the diverse requirements and demands of the clients within the promised time frame.",
+    data: "",
+    title: "🌐 Fiber Optic Internet — Powering the Digital Future",
+    data2: `Blazing Fast Connectivity: Experience unmatched upload and download speeds for all your business needs.
+High-Capacity Network: Perfect for data-intensive tasks like video calls, cloud computing, and large file transfers.
+Consistent Performance Over Distance: Enjoy stable speeds without degradation, even over long cables.
+Next-Gen Ready: Designed to support emerging technologies like AI, 4K/8K video, and smart infrastructure.
+Highly Reliable: Low signal interference ensures smooth, uninterrupted connectivity.`,
     img2: hard3,
-    title2: "OFC NETWORK MAINTENANCE",
-    data3:
-      "As communication networks are developing towards all-optical networks. We offer complete solutions in terms of equipment’s installation, Fiber routing, Designing and Maintenance\nPatrolling is aimed at preventing cable disruptions along the OFC routes daily on fixed stretchPreventive and Corrective Maintenance is carried out as defined by the SLA / SOWAll fibers are tested for the block sections and reported every month\nAny defects in the fiber or in any of the associated equipment is attended to, in consultation with the Customer at site\nRepeater stations and the optical equipment installed for alarms are monitored\nBreakdown OFC Maintenance includes 24*7 mobilization of equipment and skilled manpower for fault identification and rectification\nTest link attributes like the splice loss/link loss after the rectification of fault are corrected\nDeployment of O&M teams to carry out Splicing and Termination of Optical Fiber Cable",
+    title2: "⚡ Future-Ready Fiber Solutions for Modern Enterprises",
+    data3: `Supercharged Speeds: Boost productivity with gigabit-class internet performance.
+Scalable Bandwidth: Grow your business without worrying about internet limits.
+Enterprise-Grade Reliability: Say goodbye to signal drops and slowdowns.
+Future-Proof Infrastructure: Ideal for expanding tech needs and smart business operations.
+Minimal Downtime: Built to deliver always-on connectivity with minimal maintenance.`,
     img3: hard4,
     reverse: true,
   },
   {
     tab2: "WIRELESS",
-    data: "Mannschaft infotech is an area leader in the design and installation of wireless networks. Typical wireless installations are implemented using either Point-to-Point Bridges or Wireless Access Points. Point-to-Point Wireless Bridges are typically used to connect remote facilities together. Whether the deployment is in a typical campus environment or corporate offices miles apart, Point-to-Point wireless technology can be a very cost-effective alternative to leased lines or trenching for new cable installations.",
-    title: "Wireless Access",
-    data2:
-      "Wireless Access Points are used to facilitate wireless networking within an office environment. Wireless networking can be beneficial for roaming laptop or tablet users. There can also be great cost-savings in buildings that are extremely difficult to run network cabling.\nSite Walks & System Designs\nSystem Installations & Integrations\nSystem Expansions, Enhancements & Repairs\nNeutral Host/Enterprise/Over-The-Air Systems\nDAS/iDAS/oDAS\nSmall Cell Hub Sites\nHead End Room Build-Outs\nBDA Upgrades\nWi-Fi/Hot Spots/WLANs\nMuch More!",
+    data: "",
+    title: "📡 WIRELESS (Wi-Fi & Wireless Networks)",
+    data2: `Flexible Connectivity Without Cables
+Mobility & Convenience: Access the network from anywhere within range.
+Quick Installation: No cabling required, ideal for dynamic environments.
+Scalable: Easily extend the network by adding more access points.
+Supports BYOD: Seamless connectivity for personal and office devices.
+Secure Access Controls: Protects data with encryption and authentication.`,
     img2: hard5,
     reverse: true,
   },

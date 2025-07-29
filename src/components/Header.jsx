@@ -114,10 +114,10 @@ const Header = () => {
   const navLinks = getNavLinks(isServicesPopupVisible);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-60 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <ScrollLink
+        {/* <ScrollLink
           to="home"
           smooth={true}
           spy={true}
@@ -135,6 +135,23 @@ const Header = () => {
               />
             </div>
           </Link>
+        </ScrollLink> */}
+        <ScrollLink
+          to="home"
+          smooth={true}
+          spy={true}
+          offset={-70}
+          duration={500}
+          onClick={closeMenu}
+          className="cursor-pointer"
+        >
+          <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
+            <img
+              src={logo}
+              alt="Mannschaft Logo"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
         </ScrollLink>
 
         {/* Desktop Navigation */}

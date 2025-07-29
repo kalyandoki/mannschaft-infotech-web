@@ -54,7 +54,7 @@ const Tabs = ({ tabs }) => {
               <img
                 src={tabs[activeIndex].img2}
                 alt="Section 1 Image"
-                className="w-full h-[340px] object-cover rounded-2xl"
+                className="w-full h-[300px] object-cover rounded-2xl"
               />
             </div>
           )}
@@ -67,7 +67,7 @@ const Tabs = ({ tabs }) => {
               <img
                 src={tabs[activeIndex].img3}
                 alt="Section 2 Image"
-                className="w-full h-[340px] object-cover rounded-2xl"
+                className="w-full h-[300px] object-cover rounded-2xl"
               />
             </div>
             <div>
@@ -114,7 +114,7 @@ const Tabs = ({ tabs }) => {
                 <img
                   src={tabs[activeIndex].img4}
                   alt="Section 3 Image"
-                  className="w-full h-[340px] object-cover rounded-2xl"
+                  className="w-full h-[300px] object-cover rounded-2xl"
                 />
               </div>
             )}
@@ -128,7 +128,7 @@ const Tabs = ({ tabs }) => {
               <img
                 src={tabs[activeIndex].img5}
                 alt="Section 4 Image"
-                className="w-full h-[340px] object-cover rounded-2xl"
+                className="w-full h-[300px] object-cover rounded-2xl"
               />
             </div>
             <div>

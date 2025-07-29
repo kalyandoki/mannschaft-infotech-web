@@ -1,11 +1,16 @@
 import React from "react";
 import PerformanceAndServices from "../components/PerformanceAndServices ";
 import ContactWithUs from "../components/ContactWithUs";
+import SoftwareShowcase from "../components/SoftwareShowcase";
+import WhyUsIntro from "../components/WhyUsIntro";
+import SoftwareServicesGrid from "../components/softwareServicesGrid";
 
 function UxDesign() {
   return (
     <>
-      <div className="pt-30 font-semibold text-3xl text-center">UxDesign</div>
+      <SoftwareShowcase />
+      <WhyUsIntro />
+      <SoftwareServicesGrid />
       <PerformanceAndServices />
       <ContactWithUs />
     </>

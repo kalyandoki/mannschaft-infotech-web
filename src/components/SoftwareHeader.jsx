@@ -143,7 +143,6 @@ const SoftwareHeader = () => {
             </div>
           </Link>
         </ScrollLink>
-
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-2 lg:gap-10 font-roboto">
           {navLinks.map(({ to, label }) => (

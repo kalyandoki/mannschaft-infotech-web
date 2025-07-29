@@ -4,7 +4,7 @@ import { useAppContext } from "../context/AppContext";
 const values = [
   {
     icon: (
-      <FaHandsHelping className="text-5xl font-light hover:text-indigo-500 text-[#010fd0c9] mb-4" />
+      <FaHandsHelping className="text-5xl font-light hover:text-indigo-500 text-[#090c62b0] mb-4" />
     ),
     title: "Reliable",
     description:
@@ -12,62 +12,61 @@ const values = [
   },
   {
     icon: (
-      <FaUsers className="text-5xl hover:text-pink-500 text-[#010fd0c9] mb-4" />
+      <FaUsers className="text-5xl hover:text-pink-500 text-[#090c62b0] mb-4" />
     ),
     title: "Team Work",
     description: "Work as a team and deliver the best to our customers.",
   },
   {
     icon: (
-      <FaShieldAlt className="text-5xl hover:text-blue-500 text-[#010fd0c9] mb-4" />
+      <FaShieldAlt className="text-5xl hover:text-blue-500 text-[#090c62b0] mb-4" />
     ),
     title: "Trust",
     description:
       "To win the trust of our client and ensure a win-win situation.",
   },
-  // Duplicate more for demo
   {
-    icon: <FaHandsHelping className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaHandsHelping className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Efficiency",
     description: "Deliver high performance with optimized solutions.",
   },
   {
-    icon: <FaUsers className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaUsers className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Integrity",
     description: "Always act with honesty and transparency.",
   },
   {
-    icon: <FaShieldAlt className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaShieldAlt className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Support",
     description: "Provide 24/7 technical assistance to our clients.",
   },
   {
-    icon: <FaHandsHelping className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaHandsHelping className="text-5xl text-[#13154bc7] mb-4" />,
     title: "Efficiency",
     description: "Deliver high performance with optimized solutions.",
   },
   {
-    icon: <FaUsers className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaUsers className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Integrity",
     description: "Always act with honesty and transparency.",
   },
   {
-    icon: <FaShieldAlt className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaShieldAlt className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Support",
     description: "Provide 24/7 technical assistance to our clients.",
   },
   {
-    icon: <FaHandsHelping className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaHandsHelping className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Efficiency",
     description: "Deliver high performance with optimized solutions.",
   },
   {
-    icon: <FaUsers className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaUsers className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Integrity",
     description: "Always act with honesty and transparency.",
   },
   {
-    icon: <FaShieldAlt className="text-5xl text-[#010fd0c9] mb-4" />,
+    icon: <FaShieldAlt className="text-5xl text-[#090c62b0] mb-4" />,
     title: "Support",
     description: "Provide 24/7 technical assistance to our clients.",
   },
@@ -93,19 +92,19 @@ const MoreSolutionsSection = () => {
         {displayedValues.map((value, index) => (
           <div
             key={index}
-            className="bg-white shadow-xl rounded-2xl p-8 text-left hover:scale-105 transform transition duration-300 hover:shadow-2xl text-gray-800 hover:bg-[#ed3b1b] hover:text-white"
+            className="bg-white shadow-xl rounded-2xl p-8 text-left hover:scale-105 transform transition duration-300 hover:shadow-2xl text-[#000]"
           >
             {value.icon}
             <h3 className="text-xl sm:text-3xl font-bold mb-3 ">
               {value.title}
             </h3>
-            <p className="text-sm sm:text-lg">{value.description}</p>
+            <p className="text-sm sm:text-lg pb-4">{value.description}</p>
             <hr />
             {/* Learn More Button */}
             <div className="text-left mt-4">
               <a
                 href="#"
-                className="inline-block text-blue-500 text-base sm:text-lg font-semibold hover:underline transition"
+                className="inline-block text-[#090c62b0] text-base sm:text-lg font-semibold hover:underline transition"
               >
                 Learn more →
               </a>
