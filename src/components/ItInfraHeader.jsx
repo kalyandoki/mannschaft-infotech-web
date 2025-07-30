@@ -124,7 +124,7 @@ const ItInfraHeader = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-medium font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <ScrollLink
+        {/* <ScrollLink
           to="home"
           smooth={true}
           spy={true}
@@ -132,17 +132,17 @@ const ItInfraHeader = () => {
           duration={200}
           onClick={closeMenu}
           className="cursor-pointer"
-        >
-          <Link to="/#home" onClick={closeMenu}>
-            <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
-              <img
-                src={logo}
-                alt="Mannschaft Logo"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          </Link>
-        </ScrollLink>
+        > */}
+        <Link to="/#home" onClick={closeMenu}>
+          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
+            <img
+              src={logo}
+              alt="Mannschaft Logo"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </Link>
+        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-2 lg:gap-10 font-roboto">

@@ -125,26 +125,8 @@ const Header = () => {
           duration={200}
           onClick={closeMenu}
           className="cursor-pointer"
-        >
-          <Link to="/#home" onClick={closeMenu}>
-            <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
-              <img
-                src={logo}
-                alt="Mannschaft Logo"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          </Link>
-        </ScrollLink> */}
-        <ScrollLink
-          to="home"
-          smooth={true}
-          spy={true}
-          offset={-70}
-          duration={500}
-          onClick={closeMenu}
-          className="cursor-pointer"
-        >
+        > */}
+        <Link to="/#home" onClick={closeMenu}>
           <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
             <img
               src={logo}
@@ -152,7 +134,8 @@ const Header = () => {
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
-        </ScrollLink>
+        </Link>
+        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto">

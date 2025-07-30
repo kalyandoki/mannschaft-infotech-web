@@ -1,14 +1,14 @@
 import React from "react";
-import PerformanceAndServices from "../components/PerformanceAndServices ";
-import ContactWithUs from "../components/ContactWithUs";
 import SoftwareShowcase from "../components/SoftwareShowcase";
 import WhyUsIntro from "../components/WhyUsIntro";
 import SoftwareServicesGrid from "../components/softwareServicesGrid";
+import PerformanceAndServices from "../components/PerformanceAndServices ";
+import ContactWithUs from "../components/ContactWithUs";
 
-function UxDesign() {
+function MgPage() {
   return (
     <>
-      <SoftwareShowcase pageIndex={0} />
+      <SoftwareShowcase pageIndex={4} />
       <WhyUsIntro />
       <SoftwareServicesGrid />
       <PerformanceAndServices />
@@ -17,4 +17,4 @@ function UxDesign() {
   );
 }
 
-export default UxDesign;
+export default MgPage;

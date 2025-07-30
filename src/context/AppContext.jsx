@@ -18,7 +18,41 @@ import mul1 from "../assets/itInfra/mul1.webp";
 import mul2 from "../assets/itInfra/mul2.jpg";
 import mul3 from "../assets/itInfra/mul3.webp";
 
+import bgImg1 from "../assets/mannInfra/ux22.avif";
+import bgImg2 from "../assets/mannInfra/ui2.jpg";
+import bgImg3 from "../assets/mannInfra/ui3.avif";
+import bgImg4 from "../assets/mannInfra/ui4.jpg";
+import bgImg5 from "../assets/mannInfra/ui5.jpg";
+import bgImg6 from "../assets/mannInfra/ui66.png";
+
 const AppContext = createContext();
+
+const servicesData = [
+  {
+    heading: "UX Design",
+    bgImage: bgImg1,
+  },
+  {
+    heading: "UI Design",
+    bgImage: bgImg2,
+  },
+  {
+    heading: "UI Development",
+    bgImage: bgImg3,
+  },
+  {
+    heading: "iOS/Android",
+    bgImage: bgImg4,
+  },
+  {
+    heading: "Motion Graphics",
+    bgImage: bgImg5,
+  },
+  {
+    heading: "Augmented Reality",
+    bgImage: bgImg6,
+  },
+];
 
 const infraPagesData = [
   {
@@ -168,6 +202,7 @@ export const AppProvider = ({ children }) => {
         setActiveIndex,
         activeHeader,
         setActiveHeader,
+        servicesData,
       }}
     >
       {children}

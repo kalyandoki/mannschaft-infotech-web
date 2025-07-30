@@ -21,7 +21,6 @@ const tabData = [
   },
   {
     tab2: "HARDWARE MAINTAINANCE",
-    // data: "Our Team of professional engineers maintains your IT systems, so you have more time to focus on your core business.",
     title2: "🔧 Hardware Maintenance",
     data3: `Preventive Maintenance – Regular checkups to avoid hardware failures.
 Break-Fix Support – Quick repairs or replacements for faulty hardware.
@@ -32,10 +31,6 @@ Certified Technicians – Skilled experts ensuring reliable service.
 On-Site & Remote Support – Flexible support options based on your needs.
 Custom AMC Plans – Tailored annual maintenance contracts.`,
     img3: hard2,
-    // title2: "HARDWARE MAINTAINANCE",
-    // data3:
-    //   "We also provide in-depth hardware diagnostics and repair services...",
-    // img3: hard1,
     reverse: true,
   },
 ];
