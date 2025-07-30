@@ -181,7 +181,7 @@ const DigitalMarketingHeader = () => {
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
-              to={`/#${to}`}
+              to={`/${to}`}
               spy={true}
               smooth={true}
               offset={-30}

@@ -35,7 +35,7 @@ import UiDevPage from "./pages/UiDevPage";
 import UiDesignPage from "./pages/UiDesignPage";
 import IaPage from "./pages/IaPage";
 import MgPage from "./pages/MgPage";
-import ArPage from "./pages/ArPAge";
+import ArPage from "./pages/ArPage";
 
 function App() {
   const { activeHeader } = useAppContext();
