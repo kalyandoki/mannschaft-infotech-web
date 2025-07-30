@@ -9,9 +9,9 @@ function UiDevPage() {
   return (
     <>
       <SoftwareShowcase pageIndex={2} />
-      <WhyUsIntro />
       <SoftwareServicesGrid />
-      <PerformanceAndServices />
+      <WhyUsIntro />
+      {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
   );

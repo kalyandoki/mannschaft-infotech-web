@@ -9,9 +9,9 @@ function ArPage() {
   return (
     <>
       <SoftwareShowcase pageIndex={5} />
-      <WhyUsIntro />
       <SoftwareServicesGrid />
-      <PerformanceAndServices />
+      <WhyUsIntro />
+      {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
   );

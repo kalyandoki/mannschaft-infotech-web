@@ -9,9 +9,9 @@ function UxDesign() {
   return (
     <>
       <SoftwareShowcase pageIndex={0} />
-      <WhyUsIntro />
       <SoftwareServicesGrid />
-      <PerformanceAndServices />
+      <WhyUsIntro />
+      {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
   );

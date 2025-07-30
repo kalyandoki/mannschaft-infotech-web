@@ -11,7 +11,7 @@ function ITConsultingIntro() {
       {isVideoModalOpen && <VideoModal />}
 
       <div
-        className="relative w-full h-[60vh] bg-cover bg-center"
+        className="relative w-full h-[70vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${consultingBg})` }}
       >
         {/* Overlay */}

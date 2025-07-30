@@ -9,9 +9,9 @@ function MgPage() {
   return (
     <>
       <SoftwareShowcase pageIndex={4} />
-      <WhyUsIntro />
       <SoftwareServicesGrid />
-      <PerformanceAndServices />
+      <WhyUsIntro />
+      {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
   );

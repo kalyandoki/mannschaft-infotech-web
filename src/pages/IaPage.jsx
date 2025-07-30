@@ -9,9 +9,9 @@ function IaPage() {
   return (
     <>
       <SoftwareShowcase pageIndex={3} />
-      <WhyUsIntro />
       <SoftwareServicesGrid />
-      <PerformanceAndServices />
+      <WhyUsIntro />
+      {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
   );
