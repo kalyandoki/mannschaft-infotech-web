@@ -65,7 +65,7 @@ const ServicesPopup = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 text-sm md:text-base leading-relaxed">
           {/* IT Infra Services */}
           <div>
-            <Link to="/hardware-services">
+            <Link to="/it-infra">
               <h3
                 className="text-lg font-bold text-[#0f1d44] hover:text-[#ed3b1b] mb-2 border-b border-indigo-300 pb-1"
                 onClick={() => setActiveHeader("itinfra")}
@@ -113,7 +113,7 @@ const ServicesPopup = () => {
 
           {/* Software Services */}
           <div>
-            <Link to="/ux-design">
+            <Link to="/software-services">
               <h3
                 className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
                 onClick={() => setActiveHeader("software")}
@@ -147,7 +147,7 @@ const ServicesPopup = () => {
 
           {/* IT Consulting */}
           <div>
-            <Link to="/leadership-recruitment">
+            <Link to="/it-consulting">
               <h3
                 className="text-lg font-bold hover:text-[#ed3b1b] text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
                 onClick={() => setActiveHeader("consulting")}
@@ -175,7 +175,7 @@ const ServicesPopup = () => {
 
           {/* Marketing */}
           <div>
-            <Link to="/seo">
+            <Link to="/digital-marketing">
               <h3
                 className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 border-b border-indigo-300 pb-1"
                 onClick={() => setActiveHeader("marketing")}
@@ -202,17 +202,22 @@ const ServicesPopup = () => {
           </div>
 
           <div>
-            <h3
-              className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 pb-1 flex items-center"
-              onClick={() => setActiveHeader("focus")}
-            >
-              <FiTarget className="text-[#010ED0] text-2xl sm:text-3xl md:text-4xl mr-2" />
-              Industry Focus
-            </h3>
+            <Link to="/industry-focus">
+              <h3
+                className="text-lg font-bold hover:text-[#ed3b1b]  text-[#0f1d44] mb-2 pb-1 flex items-center"
+                onClick={() => setActiveHeader("focus")}
+              >
+                <FiTarget className="text-[#010ED0] text-2xl sm:text-3xl md:text-4xl mr-2" />
+                Industry Focus
+              </h3>
+            </Link>
+
             <ul className="list-disc list-inside space-y-2">
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Industry Manufacturing
-              </li>
+              <Link to="/industry-manufacturing">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Industry Manufacturing
+                </li>
+              </Link>
               <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
                 Transportation Logistics
               </li>
@@ -229,10 +234,12 @@ const ServicesPopup = () => {
                 Non Profit
               </li>
             </ul>
-            <span className=" text-[#010ED0] font-bold  m-2 flex items-center justify-content-end w-21 border-0 border-b-2 hover:font-semibold hover:text-red-600 ">
-              View all
-              <AiOutlineArrowRight className="ml-2 font-bold" />
-            </span>
+            <Link to="/industries">
+              <span className=" text-[#010ED0] font-bold  m-2 flex items-center justify-content-end w-21 border-0 border-b-2 hover:font-semibold hover:text-red-600 ">
+                View all
+                <AiOutlineArrowRight className="ml-2 font-bold" />
+              </span>
+            </Link>
           </div>
         </div>
       </div>

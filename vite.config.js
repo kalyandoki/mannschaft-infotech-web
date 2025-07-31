@@ -13,9 +13,14 @@ export default defineConfig({
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        slideUp: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-50%)" },
+        },
       },
       animation: {
         "scroll-x": "scrollX 30s linear infinite",
+        "slide-up": "slideUp 10s linear infinite",
       },
       fontFamily: {
         roboto: ['"Roboto Condensed"', "sans-serif"],

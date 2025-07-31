@@ -36,6 +36,15 @@ import UiDesignPage from "./pages/UiDesignPage";
 import IaPage from "./pages/IaPage";
 import MgPage from "./pages/MgPage";
 import ArPage from "./pages/ArPage";
+import IndustryFocusHeader from "./components/IndustryFocusHeader";
+import IndustryManuPage from "./pages/IndustryManuPage";
+import IndustryFocusLayout from "./layouts/IndustryFocusLayout";
+import IndustryFocusPage from "./pages/IndustryFocusPage";
+import IndustriesPage from "./pages/IndustriesPage";
+import ItInfraPage from "./pages/ItInfraPage";
+import SoftwareServicesPage from "./pages/SoftwareServicesPage";
+import ITConsultingServicesPage from "./pages/ITConsultingServicesPage";
+import DigitalMarketingPage from "./pages/DigitalMarketingPage";
 
 function App() {
   const { activeHeader } = useAppContext();
@@ -60,7 +69,7 @@ function App() {
         {activeHeader === "software" && <SoftwareHeader />}
         {activeHeader === "consulting" && <ItConsultingHeader />}
         {activeHeader === "marketing" && <DigitalMarketingHeader />}
-        {activeHeader === "focus" && <FocusHeader />}
+        {activeHeader === "focus" && <IndustryFocusHeader />}
       </header>
 
       <ScrollToTop />
@@ -74,6 +83,7 @@ function App() {
 
           {/* IT Infra Layout */}
           <Route element={<ItInfraLayout />}>
+            <Route path="/it-infra" element={<ItInfraPage />} />
             <Route path="/hardware-services" element={<HardwarePage />} />
             <Route path="/networking-services" element={<NetworkingPage />} />
             <Route path="/cloud-infrastructure" element={<CloudPage />} />
@@ -87,6 +97,10 @@ function App() {
 
           {/* Software Layout */}
           <Route element={<SoftwareServiceLayout />}>
+            <Route
+              path="/software-services"
+              element={<SoftwareServicesPage />}
+            />
             <Route path="/ux-design" element={<UxDesign />} />
             <Route path="/ui-design" element={<UiDesignPage />} />
             <Route path="/ui-development" element={<UiDevPage />} />
@@ -97,6 +111,10 @@ function App() {
 
           {/* IT Consulting */}
           <Route element={<ItConsultingLayout />}>
+            <Route
+              path="/it-consulting"
+              element={<ITConsultingServicesPage />}
+            />
             <Route
               path="/leadership-recruitment"
               element={<LeadershipRecruitment />}
@@ -114,6 +132,10 @@ function App() {
 
           {/* Digital Marketing */}
           <Route element={<DigitalMarketingLayout />}>
+            <Route
+              path="/digital-marketing"
+              element={<DigitalMarketingPage />}
+            />
             <Route path="/seo" element={<Seo />} />
             <Route path="/advertising" element={<Seo />} />
             <Route path="/social-media-marketing" element={<Seo />} />
@@ -121,9 +143,28 @@ function App() {
           </Route>
 
           {/* Focus Header */}
+          <Route element={<IndustryFocusLayout />}>
+            <Route path="/industry-focus" element={<IndustryFocusPage />} />
+            <Route
+              path="/industry-manufacturing"
+              element={<IndustryManuPage />}
+            />
+            <Route
+              path="/transportation-logistics"
+              element={<IndustryManuPage />}
+            />
+            <Route path="/healthcare" element={<IndustryManuPage />} />
+            <Route path="/banks-insurance" element={<IndustryManuPage />} />
+            <Route
+              path="/consulting-providers"
+              element={<IndustryManuPage />}
+            />
+            <Route path="/non-profit" element={<IndustryManuPage />} />
+          </Route>
 
           {/* Other Services */}
           <Route path="/solutions" element={<SolutionsViewPage />} />
+          <Route path="/industries" element={<IndustriesPage />} />
         </Routes>
       </main>
     </>

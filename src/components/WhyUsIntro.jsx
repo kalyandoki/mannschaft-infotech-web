@@ -8,7 +8,7 @@ export default function WhyUsIntro() {
     <>
       {/* Hero Section */}
       <section className="w-full min-h-screen flex flex-col justify-center items-center bg-white text-black px-6 text-center pt-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold max-w-5xl leading-relaxed">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-5xl leading-relaxed">
           Experienced teams and an agile framework — we prioritize your
           commercial goals to deliver the highest business value.
         </h1>

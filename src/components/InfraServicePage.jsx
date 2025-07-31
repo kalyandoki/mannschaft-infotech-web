@@ -16,9 +16,12 @@ const InfraServicePage = ({ pageIndex }) => {
         backgroundImage: `url(${page.bgImage})`,
       }}
     >
-      <div className="bg-[#00000099] p-10 rounded-3xl max-w-3xl text-center space-y-6 shadow-2xl border border-white/30">
+      <div className="p-10 bg-[#45642315] rounded-3xl max-w-3xl text-left space-y-6 text-[#ec2028]">
+        <h1 className="text-white text-3xl md:text-6xl font-extrabold animate-fadeInDown pt-10">
+          IT <span className="text-[#ec2028]">Infra</span>
+        </h1>
         <AnimatedHeading text={page.heading} />
-        <p className="text-lg">{page.description}</p>
+        <p className="text-lg text-[#fff]   ">{page.description}</p>
         <button className="bg-gradient-to-r from-green-400 to-lime-500 text-black font-semibold px-6 py-3 rounded-full hover:scale-105 transition">
           {page.buttonText}
         </button>
