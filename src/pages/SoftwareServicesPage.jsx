@@ -14,19 +14,25 @@ export default function SoftwareServicesPage() {
       <div className="relative z-10 max-w-5xl px-6 sm:px-10 md:px-16 lg:px-24 py-12 bg-[#fff]/0 rounded-3xl m-6 ">
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug">
           Software <span className="text-[#236fb4]">Services</span>{" "}
-          <span className="text-[#236fb4] block mt-2 bg-[#fff]/0 p-2 rounded-lg">
-            <AnimatedHeading text={`UX Designing`} />
-            <br />
-            <AnimatedHeading text={`UI Designing`} />
-            <br />
-            <AnimatedHeading text={`UI Development `} />
-            <br />
-            <AnimatedHeading text={`iOS/Android App Development  `} />
-            <br />
-            <AnimatedHeading text={`Motion Graphics`} />
-            <br />
-            <AnimatedHeading text={`Augmented Reality`} />
-            <br />
+          <span className="text-[#fff]  block mt-2 bg-[#fff]/0 p-2 rounded-lg">
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`UX Designing`} />
+            </div>
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`UI Designing`} />
+            </div>
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`UI Development `} />
+            </div>
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`iOS/Android App Development  `} />
+            </div>
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`Motion Graphics`} />
+            </div>
+            <div className="hover:text-[#236fb4]">
+              <AnimatedHeading text={`Augmented Reality`} />
+            </div>
           </span>
         </h1>
       </div>

@@ -12,3 +12,8 @@ body {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* Native scroll momentum on iOS */
+.scroll-snap-container {
+  -webkit-overflow-scrolling: touch;
+}

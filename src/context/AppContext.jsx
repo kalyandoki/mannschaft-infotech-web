@@ -1,22 +1,22 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import hard1 from "../assets/itInfra/hard1.jpg";
+import hard1 from "../assets/itInfra/hard11.jpg";
 import hard2 from "../assets/itInfra/hard2.jpg";
 import hard3 from "../assets/itInfra/hard3.jpg";
 import net1 from "../assets/itInfra/net1.jpg";
 import net2 from "../assets/itInfra/net2.jpg";
 import net3 from "../assets/itInfra/net3.jpg";
-import sup1 from "../assets/itInfra/s1.jpg";
+import sup1 from "../assets/itInfra/sss222.png";
 import sup2 from "../assets/itInfra/s2.webp";
 import sup3 from "../assets/itInfra/s3.webp";
 import clo1 from "../assets/itInfra/clo1.jpg";
 import clo2 from "../assets/itInfra/clo2.jpg";
 import clo3 from "../assets/itInfra/clo3.jpg";
 import pri1 from "../assets/itInfra/pri1.jpg";
-import pri2 from "../assets/itInfra/pri2.webp";
-import pri3 from "../assets/itInfra/pri3.webp";
+import pri2 from "../assets/itInfra/pri3.webp";
+import pri3 from "../assets/itInfra/pp1.jpeg";
 import mul1 from "../assets/itInfra/mul1.webp";
 import mul2 from "../assets/itInfra/mul2.jpg";
-import mul3 from "../assets/itInfra/mul3.webp";
+import mul3 from "../assets/itInfra/mul322.webp";
 
 import bgImg1 from "../assets/mannInfra/ux22.avif";
 import bgImg2 from "../assets/mannInfra/ui2.jpg";
@@ -57,7 +57,7 @@ const servicesData = [
 const infraPagesData = [
   {
     name: "Hardware Services",
-    heading: "Managed Hardware Services",
+    heading: "Hardware Services",
     description:
       "Why hire an internal IT person, when you can have an entire team of IT experts for a fraction of the cost?",
     buttonText: "Schedule a Free Consultation",
@@ -67,7 +67,7 @@ const infraPagesData = [
   },
   {
     name: "Networking Services",
-    heading: "Managed Networking Services",
+    heading: "Networking Services",
     description:
       "Let our professionals build and manage a secure and scalable network for your business.",
     buttonText: "Schedule a Free Consultation",
@@ -77,7 +77,7 @@ const infraPagesData = [
   },
   {
     name: "Cloud & Infrastructure",
-    heading: "Cloud Infrastructure Management",
+    heading: "Cloud Infrastructure",
     description:
       "Get access to reliable cloud services tailored to your business needs with 24/7 monitoring.",
     buttonText: "Schedule a Free Consultation",
@@ -87,7 +87,7 @@ const infraPagesData = [
   },
   {
     name: "Surveillance Security",
-    heading: "Complete Surveillance Solutions",
+    heading: "Surveillance Security",
     description:
       "Keep your assets safe with advanced CCTV and surveillance systems integrated with AI.",
     buttonText: "Schedule a Free Consultation",
@@ -97,17 +97,17 @@ const infraPagesData = [
   },
   {
     name: "Printer Services",
-    heading: "Reliable Printing Solutions",
+    heading: "Printer Services",
     description:
       "From setup to maintenance, get cost-effective and efficient printer services tailored to your business needs.",
     buttonText: "Schedule a Free Consultation",
-    bgImage: pri2,
-    img2: pri1,
-    img3: pri3,
+    bgImage: pri3,
+    img2: pri2,
+    img3: pri1,
   },
   {
     name: "Multimedia Services",
-    heading: "Engaging Multimedia Experiences",
+    heading: "Multimedia Services",
     description:
       "Enhance your business communication with state-of-the-art multimedia setups including projectors, displays, and AV systems.",
     buttonText: "Schedule a Free Consultation",

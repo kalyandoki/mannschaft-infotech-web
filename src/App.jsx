@@ -83,7 +83,7 @@ function App() {
 
           {/* IT Infra Layout */}
           <Route element={<ItInfraLayout />}>
-            <Route path="/it-infra" element={<ItInfraPage />} />
+            <Route path="/it-infra" element={<HardwarePage />} />
             <Route path="/hardware-services" element={<HardwarePage />} />
             <Route path="/networking-services" element={<NetworkingPage />} />
             <Route path="/cloud-infrastructure" element={<CloudPage />} />
@@ -97,10 +97,7 @@ function App() {
 
           {/* Software Layout */}
           <Route element={<SoftwareServiceLayout />}>
-            <Route
-              path="/software-services"
-              element={<SoftwareServicesPage />}
-            />
+            <Route path="/software-services" element={<UxDesign />} />
             <Route path="/ux-design" element={<UxDesign />} />
             <Route path="/ui-design" element={<UiDesignPage />} />
             <Route path="/ui-development" element={<UiDevPage />} />
@@ -111,10 +108,7 @@ function App() {
 
           {/* IT Consulting */}
           <Route element={<ItConsultingLayout />}>
-            <Route
-              path="/it-consulting"
-              element={<ITConsultingServicesPage />}
-            />
+            <Route path="/it-consulting" element={<LeadershipRecruitment />} />
             <Route
               path="/leadership-recruitment"
               element={<LeadershipRecruitment />}
@@ -132,10 +126,7 @@ function App() {
 
           {/* Digital Marketing */}
           <Route element={<DigitalMarketingLayout />}>
-            <Route
-              path="/digital-marketing"
-              element={<DigitalMarketingPage />}
-            />
+            <Route path="/digital-marketing" element={<Seo />} />
             <Route path="/seo" element={<Seo />} />
             <Route path="/advertising" element={<Seo />} />
             <Route path="/social-media-marketing" element={<Seo />} />
@@ -144,7 +135,7 @@ function App() {
 
           {/* Focus Header */}
           <Route element={<IndustryFocusLayout />}>
-            <Route path="/industry-focus" element={<IndustryFocusPage />} />
+            <Route path="/industry-focus" element={<IndustryManuPage />} />
             <Route
               path="/industry-manufacturing"
               element={<IndustryManuPage />}

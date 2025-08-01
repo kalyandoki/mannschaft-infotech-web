@@ -2,9 +2,9 @@ import React from "react";
 import PerformanceAndServices from "../components/PerformanceAndServices ";
 import ContactWithUs from "../components/ContactWithUs";
 import SoftwareShowcase from "../components/SoftwareShowcase";
-import WhyUsIntro from "../components/WhyUsIntro";
 import SoftwareServicesGrid from "../components/SoftwareServicesGrid";
 import ScrollSnapContainers from "../components/ScrollSnapContainers";
+import WhyUsIntro from "../components/WhyUsIntro";
 
 function UxDesign() {
   return (
@@ -13,6 +13,7 @@ function UxDesign() {
       <SoftwareServicesGrid />
       <WhyUsIntro />
       <ScrollSnapContainers />
+
       {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>
