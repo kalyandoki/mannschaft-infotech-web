@@ -182,10 +182,10 @@ const DigitalMarketingHeader = () => {
             <Link
               key={to}
               to={`/${to}`}
-              spy={true}
-              smooth={true}
-              offset={-30}
-              duration={200}
+              // spy={true}
+              // smooth={true}
+              // offset={-30}
+              // duration={200}
               onClick={() => handleMobileClick(to)}
               className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
