@@ -240,21 +240,31 @@ const ServicesPopup = () => {
                   Industry Manufacturing
                 </li>
               </Link>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Transportation Logistics
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Healthcare
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Banks & Insurance
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Consulting Providers
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%] mb-2">
-                Non Profit
-              </li>
+              <Link to="/transportation-logistics">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Transportation Logistics
+                </li>
+              </Link>
+              <Link to="/healthcare">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Healthcare
+                </li>
+              </Link>
+              <Link to="/banks-insurance">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Banks & Insurance
+                </li>
+              </Link>
+              <Link to="/consulting-providers">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Consulting Providers
+                </li>
+              </Link>
+              <Link to="/non-profit">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%] mb-2">
+                  Non Profit
+                </li>
+              </Link>
             </ul>
             <Link to="/industries">
               <span className=" text-[#010ED0] font-bold  m-2 flex items-center justify-content-end w-21 border-0 border-b-2 hover:font-semibold hover:text-red-600 ">
