@@ -8,10 +8,11 @@ function ReviewSummarySection() {
   return (
     <div>
       <section className="border-1 m-2 border-[#b4d7e29b] shadow-xl p-8 rounded-xl text-center">
-        <div className="w-full bg-white  p-8 flex flex-wrap justify-between items-center gap-6 text-gray-800 text-sm sm:text-base font-medium">
-          {/* === Reviewed Section === */}
-          <div className="flex items-center gap-2 flex-wrap flex-col">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+        <div className="w-full bg-white p-8 flex flex-col gap-6 text-gray-800 text-sm sm:text-base font-medium">
+          {/* === Stats Section === */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-2 text-center divide-y md:divide-y-0 md:divide-x divide-gray-300">
+            {/* === Reviewed Section === */}
+            <div className="flex flex-col items-center gap-4 text-center">
               <div className="flex flex-col sm:flex-row items-center gap-2">
                 <h3 className="text-lg font-semibold text-gray-800">
                   Reviewed on
@@ -30,9 +31,7 @@ function ReviewSummarySection() {
                   ))}
                 </div>
               </div>
-            </div>
 
-            <div className="w-full flex justify-center items-center text-center sm:text-left">
               <div className="flex justify-center items-center gap-4 flex-wrap">
                 <img src={clogo} alt="Logo" className="w-20 h-10 rounded-lg" />
                 <span className="text-xl font-bold text-gray-700">
@@ -40,23 +39,19 @@ function ReviewSummarySection() {
                 </span>
               </div>
             </div>
-          </div>
-
-          {/* === Stats Section === */}
-          <div className="grid grid-cols-1 sm:grid-cols-4 md:divide-x divide-gray-300 text-center w-full sm:w-max flex-1 gap-4">
-            <div className="px-4 pr-6 order-3 sm:order-1">
+            <div className="px-4">
               <p className="text-2xl font-bold">20 Years Head</p>
               <p>Proven Track Record</p>
             </div>
-            <div className="px-4 order-1 sm:order-2">
+            <div className="px-4">
               <p className="text-2xl font-bold">98%</p>
               <p>Customer Satisfaction</p>
             </div>
-            <div className="px-4 order-2 sm:order-3 pr-6 md:pr-0">
+            <div className="px-4">
               <p className="text-2xl font-bold">1,500+</p>
               <p>Projects Completed</p>
             </div>
-            <div className="px-4 order-4 sm:order-4">
+            <div className="px-4">
               <p className="text-2xl font-bold">3 Mins</p>
               <p>Average Answer Time</p>
             </div>
