@@ -124,7 +124,7 @@ const FocusHeader = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <ScrollLink
+        {/* <ScrollLink
           to="home"
           smooth={true}
           spy={true}
@@ -132,17 +132,17 @@ const FocusHeader = () => {
           duration={200}
           onClick={closeMenu}
           className="cursor-pointer"
-        >
-          <Link to="/#home" onClick={closeMenu}>
-            <div className="w-16 h-26 md:w-50 md:h-30 rounded-full ml-4">
-              <img
-                src={logo}
-                alt="Mannschaft Logo"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-          </Link>
-        </ScrollLink>
+        > */}
+        <Link to="/#home" onClick={closeMenu}>
+          <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
+            <img
+              src={logo}
+              alt="Mannschaft Logo"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+        </Link>
+        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto font-bold">

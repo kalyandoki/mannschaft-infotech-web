@@ -134,7 +134,7 @@ const ItInfraHeader = () => {
           className="cursor-pointer"
         > */}
         <Link to="/#home" onClick={closeMenu}>
-          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4 ml-4">
+          <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
             <img
               src={logo}
               alt="Mannschaft Logo"

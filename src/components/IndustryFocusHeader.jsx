@@ -134,7 +134,7 @@ const IndustryFocusHeader = () => {
           className="cursor-pointer"
         > */}
         <Link to="/#home" onClick={closeMenu}>
-          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
+          <div className="w-32 h-26 md:w-50 md:h-30 rounded-full">
             <img
               src={logo}
               alt="Mannschaft Logo"
@@ -186,10 +186,6 @@ const IndustryFocusHeader = () => {
             <Link
               key={to}
               to={`/${to}`}
-              spy={true}
-              smooth={true}
-              offset={-30}
-              duration={200}
               onClick={() => handleMobileClick(to)}
               className="cursor-pointer px-4 py-2 text-[#27362e] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >

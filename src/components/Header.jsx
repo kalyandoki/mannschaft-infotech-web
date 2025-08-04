@@ -117,15 +117,6 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        {/* <ScrollLink
-          to="home"
-          smooth={true}
-          spy={true}
-          offset={-30}
-          duration={200}
-          onClick={closeMenu}
-          className="cursor-pointer"
-        > */}
         <Link to="/#home" onClick={closeMenu}>
           <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
             <img
@@ -135,7 +126,6 @@ const Header = () => {
             />
           </div>
         </Link>
-        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto">
