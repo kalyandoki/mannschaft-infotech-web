@@ -137,7 +137,7 @@ export const AppProvider = ({ children }) => {
   const [activeSectionHead, setActiveSectionHead] = useState("");
   const [showAll, setShowAll] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [activeHeader, setActiveHeader] = useState("main");
+  const [activeHeader, setActiveHeader] = useState(null);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -175,6 +175,10 @@ export const AppProvider = ({ children }) => {
     );
   };
 
+  const setOnlyHeader = (headerName) => {
+    setActiveHeader(headerName); // First clear all
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -203,6 +207,7 @@ export const AppProvider = ({ children }) => {
         activeHeader,
         setActiveHeader,
         servicesData,
+        setOnlyHeader,
       }}
     >
       {children}

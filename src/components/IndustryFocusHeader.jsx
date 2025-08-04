@@ -122,7 +122,7 @@ const IndustryFocusHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-medium font-roboto">
-      <div className="max-w-8xl mx-auto flex items-center justify-between ml-10 mr-10">
+      <div className="max-w-8xl mx-auto flex items-center justify-between ml-8 mr-8">
         {/* Logo */}
         {/* <ScrollLink
           to="home"

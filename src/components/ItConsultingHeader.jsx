@@ -130,7 +130,7 @@ const ItConsultingHeader = () => {
           className="cursor-pointer"
         > */}
         <Link to="/#home" onClick={closeMenu}>
-          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
+          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4 ml-4">
             <img
               src={logo}
               alt="Mannschaft Logo"
@@ -160,7 +160,7 @@ const ItConsultingHeader = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-3xl text-gray-800 focus:outline-none"
+          className="md:hidden text-3xl text-gray-800 focus:outline-none mr-4"
         >
           ☰
         </button>

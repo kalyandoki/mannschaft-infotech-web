@@ -7,20 +7,21 @@ const ContactWithUs = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-roboto">
         Contact Us
       </h2>
+
       {/* Header */}
-      <div className="max-w-7xl mx-auto  text-center md:text-left bg-[#000] rounded-t-3xl">
-        <span className="text-[#fff] font-semibold rounded-md m-4 pl-2 pr-2 pb-2 bg-[#a4d5dd65]">
+      <div className="max-w-7xl mx-auto text-center md:text-left bg-[#000] rounded-t-3xl">
+        <span className="text-[#fff] font-semibold rounded-md m-4 pl-2 pr-2 pb-2 bg-[#a4d5dd65] inline-block">
           Contact Us
         </span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white pt-30 p-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white pt-10 md:pt-20 px-4 pb-4">
           Partner with Us for Comprehensive IT
         </h2>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 bg-[#bad8e52e] p-8 rounded-b-3xl">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 bg-[#bad8e52e] p-6 sm:p-8 rounded-b-3xl">
         {/* Left Content */}
-        <div className=" p-6 sm:p-10 rounded-2xl">
+        <div className="p-4 sm:p-6 md:p-8 rounded-2xl w-full">
           <p className="text-lg mb-4">
             We’re happy to answer any questions you may have and help you
             determine which of our services best fit your needs.
@@ -30,7 +31,6 @@ const ContactWithUs = () => {
             Call us at: 1-800-356-8933
           </p>
 
-          {/* Benefits */}
           <h3 className="text-2xl font-bold mb-4">Your benefits:</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-base mb-10">
             {[
@@ -48,7 +48,6 @@ const ContactWithUs = () => {
             ))}
           </div>
 
-          {/* What happens next */}
           <h3 className="text-2xl font-bold mb-6">What happens next?</h3>
           {[
             "We schedule a call at your convenience",
@@ -56,14 +55,19 @@ const ContactWithUs = () => {
             "We prepare a proposal",
           ].map((step, i) => (
             <div key={i} className="flex items-start gap-4 mb-4">
-              <div className="text-xl font-bold text-[#000]">{i + 1} •</div>
+              <div className="text-xl font-bold text-[#000]">•</div>
               <p className="text-[#000]">{step}</p>
             </div>
           ))}
         </div>
 
         {/* Contact Form */}
-        <form className="bg-[#fff] p-6 sm:p-10 rounded-2xl shadow-md w-full border border-gray-100 relative -top-[20%]">
+        <form
+          className="bg-[#fff] p-6 sm:p-10 rounded-2xl shadow-md w-full border border-gray-100 
+  relative z-10
+  lg:-mt-40 lg:mx-auto lg:max-w-xl
+"
+        >
           <h3 className="text-center text-2xl font-bold text-[#000] mb-8">
             Schedule a Free Consultation
           </h3>

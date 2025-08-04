@@ -5,7 +5,7 @@ import { useAppContext } from "../context/AppContext";
 import logo from "../assets/images/mannschaft logo.png";
 import psLogo from "../assets/images/ps-logo.png";
 
-import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+// import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 
 const getNavLinks = () => [
   {
@@ -130,7 +130,7 @@ const DigitalMarketingHeader = () => {
           className="cursor-pointer"
         > */}
         <Link to="/#home" onClick={closeMenu}>
-          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4">
+          <div className="w-16 h-20 md:w-45 md:h-30 rounded-full gap-4 ml-4">
             <img
               src={logo}
               alt="Mannschaft Logo"
@@ -160,7 +160,7 @@ const DigitalMarketingHeader = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-3xl text-gray-800 focus:outline-none"
+          className="md:hidden text-3xl text-gray-800 focus:outline-none mr-4"
         >
           ☰
         </button>

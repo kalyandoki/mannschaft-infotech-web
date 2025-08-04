@@ -39,18 +39,54 @@ import ArPage from "./pages/ArPage";
 import IndustryFocusHeader from "./components/IndustryFocusHeader";
 import IndustryManuPage from "./pages/IndustryManuPage";
 import IndustryFocusLayout from "./layouts/IndustryFocusLayout";
-import IndustryFocusPage from "./pages/IndustryFocusPage";
+//import IndustryFocusPage from "./pages/IndustryFocusPage";
 import IndustriesPage from "./pages/IndustriesPage";
-import ItInfraPage from "./pages/ItInfraPage";
-import SoftwareServicesPage from "./pages/SoftwareServicesPage";
-import ITConsultingServicesPage from "./pages/ITConsultingServicesPage";
-import DigitalMarketingPage from "./pages/DigitalMarketingPage";
+// import ItInfraPage from "./pages/ItInfraPage";
+// import SoftwareServicesPage from "./pages/SoftwareServicesPage";
+// import ITConsultingServicesPage from "./pages/ITConsultingServicesPage";
+// import DigitalMarketingPage from "./pages/DigitalMarketingPage";
 
 function App() {
-  const { activeHeader } = useAppContext();
+  const { activeHeader, setOnlyHeader } = useAppContext();
   const location = useLocation();
 
   useEffect(() => {
+    const path = location.pathname;
+
+    // Set headers based on current route
+    if (
+      path === "/" ||
+      path === "/home" ||
+      path.includes("/products-services")
+    ) {
+      setOnlyHeader("main");
+    } else if (
+      path.includes("/it-infra") ||
+      path.includes("hardware") ||
+      path.includes("networking") ||
+      path.includes("cloud") ||
+      path.includes("printer") ||
+      path.includes("surveillance") ||
+      path.includes("multimedia")
+    ) {
+      setOnlyHeader("itinfra");
+    } else if (path.includes("software")) {
+      setOnlyHeader("software");
+    } else if (
+      path.includes("consulting") ||
+      path.includes("recruitment") ||
+      path.includes("rpo")
+    ) {
+      setOnlyHeader("consulting");
+    } else if (path.includes("digital")) {
+      setOnlyHeader("marketing");
+    } else if (path.includes("industry")) {
+      setOnlyHeader("focus");
+    } else {
+      setOnlyHeader(null); // fallback
+    }
+
+    // Smooth scroll to section if hash exists
     if (location.pathname === "/" && location.hash) {
       const target = document.getElementById(location.hash.replace("#", ""));
       if (target) {
@@ -59,7 +95,7 @@ function App() {
         }, 100);
       }
     }
-  }, [location]);
+  }, [location, setOnlyHeader]);
 
   return (
     <>

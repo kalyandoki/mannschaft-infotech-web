@@ -127,21 +127,31 @@ const ServicesPopup = () => {
                   UX Designing
                 </li>
               </Link>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                UI Designing
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                UI Development
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[120%]">
-                iOS/Android App Development
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Motion Graphics
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Augmented Reality
-              </li>
+              <Link to="/ui-design">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  UI Designing
+                </li>
+              </Link>
+              <Link to="/ui-development">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  UI Development
+                </li>
+              </Link>
+              <Link to="/ios-app-dev">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[120%]">
+                  iOS/Android App Development
+                </li>
+              </Link>
+              <Link to="/motion-graphics">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Motion Graphics
+                </li>
+              </Link>
+              <Link to="/augmented-reality">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Augmented Reality
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -161,15 +171,21 @@ const ServicesPopup = () => {
                   Leadership Recruitment
                 </li>
               </Link>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Lateral Recruitment
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Fresher Recruitment
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                RPO (Shared Services)
-              </li>
+              <Link to="/lateral-recruitment">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Lateral Recruitment
+                </li>
+              </Link>
+              <Link to="/fresher-recruitment">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Fresher Recruitment
+                </li>
+              </Link>
+              <Link to="/rpo">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  RPO (Shared Services)
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -189,15 +205,21 @@ const ServicesPopup = () => {
                   SEO
                 </li>
               </Link>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Advertising
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Social Media Marketing
-              </li>
-              <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
-                Email Marketing
-              </li>
+              <Link to="/advertising">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Advertising
+                </li>
+              </Link>
+              <Link to="/social-media-marketing">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Social Media Marketing
+                </li>
+              </Link>
+              <Link to="/email-marketing">
+                <li className="hover:text-[#ed3b1b] text-[#0f1d44] font-semibold hover:font-semibold  rounded-lg w-[80%]">
+                  Email Marketing
+                </li>
+              </Link>
             </ul>
           </div>
 

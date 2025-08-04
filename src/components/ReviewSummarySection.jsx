@@ -11,48 +11,52 @@ function ReviewSummarySection() {
         <div className="w-full bg-white  p-8 flex flex-wrap justify-between items-center gap-6 text-gray-800 text-sm sm:text-base font-medium">
           {/* === Reviewed Section === */}
           <div className="flex items-center gap-2 flex-wrap flex-col">
-            <div className="flex items-center gap-2 flex-wrap">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Reviewed on
-              </h3>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#facc15"
-                    viewBox="0 0 24 24"
-                    className="w-5 h-5"
-                  >
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                  </svg>
-                ))}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row items-center gap-2">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Reviewed on
+                </h3>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      key={i}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#facc15"
+                      viewBox="0 0 24 24"
+                      className="w-5 h-5"
+                    >
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 flex-wrap">
-              <img src={clogo} alt="Logo" className="w-20 h-10 rounded-lg " />
-              <span className="text-xl font-bold text-gray-700">
-                31 Reviews
-              </span>
+            <div className="w-full flex justify-center items-center text-center sm:text-left">
+              <div className="flex justify-center items-center gap-4 flex-wrap">
+                <img src={clogo} alt="Logo" className="w-20 h-10 rounded-lg" />
+                <span className="text-xl font-bold text-gray-700">
+                  31 Reviews
+                </span>
+              </div>
             </div>
           </div>
 
           {/* === Stats Section === */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-gray-300 text-center w-full sm:w-auto flex-1">
-            <div className="px-4 border-l-1">
+          <div className="grid grid-cols-1 sm:grid-cols-4 md:divide-x divide-gray-300 text-center w-full sm:w-max flex-1 gap-4">
+            <div className="px-4 pr-6 order-3 sm:order-1">
               <p className="text-2xl font-bold">20 Years Head</p>
               <p>Proven Track Record</p>
             </div>
-            <div className="px-4">
+            <div className="px-4 order-1 sm:order-2">
               <p className="text-2xl font-bold">98%</p>
               <p>Customer Satisfaction</p>
             </div>
-            <div className="px-4">
+            <div className="px-4 order-2 sm:order-3 pr-6 md:pr-0">
               <p className="text-2xl font-bold">1,500+</p>
               <p>Projects Completed</p>
             </div>
-            <div className="px-4">
+            <div className="px-4 order-4 sm:order-4">
               <p className="text-2xl font-bold">3 Mins</p>
               <p>Average Answer Time</p>
             </div>

@@ -127,7 +127,7 @@ const Header = () => {
           className="cursor-pointer"
         > */}
         <Link to="/#home" onClick={closeMenu}>
-          <div className="w-16 h-26 md:w-50 md:h-30 rounded-full">
+          <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
             <img
               src={logo}
               alt="Mannschaft Logo"
@@ -157,7 +157,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-3xl text-gray-800 focus:outline-none"
+          className="md:hidden text-3xl text-gray-800 focus:outline-none mr-4 sm:hover:text-[#ed3b1b]"
         >
           ☰
         </button>
@@ -179,10 +179,10 @@ const Header = () => {
             <Link
               key={to}
               to={`/#${to}`}
-              spy={true}
-              smooth={true}
-              offset={-30}
-              duration={200}
+              // spy={true}
+              // smooth={true}
+              // offset={-30}
+              // duration={200}
               onClick={() => handleMobileClick(to)}
               className="cursor-pointer px-4 py-2 text-[#000] font-semibold text-base lg:text-lg rounded-full hover:bg-[#06c26dbf] hover:text-black transition duration-300"
             >
