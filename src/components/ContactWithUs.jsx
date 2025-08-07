@@ -1,38 +1,42 @@
 import React from "react";
 import { FaCheckCircle, FaPhoneAlt, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ContactWithUs = () => {
   return (
-    <section className="w-full bg-white text-black px-4 sm:px-6 md:px-10 py-6 md:py-20 font-sans">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-roboto">
+    <section className="w-full bg-white text-black px-4 sm:px-6 md:px-10 2xl:px-20 py-8 sm:py-12 md:py-20 2xl:py-28 font-sans">
+      {/* Section Title */}
+      <h2 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold text-center text-gray-800 mb-8 font-roboto">
         Contact Us
       </h2>
 
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center md:text-left bg-[#000] rounded-t-3xl">
-        <span className="text-[#fff] font-semibold rounded-md m-4 pl-2 pr-2 pb-2 bg-[#a4d5dd65] inline-block">
-          Contact Us
-        </span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white pt-10 md:pt-20 px-4 pb-4">
-          Partner with Us for Comprehensive IT
-        </h2>
-      </div>
+      <Link to="#partner-with-us">
+        <div className="max-w-8xl mx-auto text-center md:text-left bg-[#000] rounded-t-3xl px-4 sm:px-6 md:px-10 2xl:px-16 py-12 sm:py-16 md:py-20 2xl:py-32 flex flex-col items-start justify-center">
+          <h2 className="text-2xl sm:text-4xl md:text-4xl 2xl:text-5xl font-bold text-white">
+            Partner with Us for Comprehensive IT
+          </h2>
+        </div>
+      </Link>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-10 bg-[#bad8e52e] p-6 sm:p-8 rounded-b-3xl">
+      <div className="max-w-8xl mx-auto flex flex-col-reverse lg:flex-row gap-10 bg-[#bad8e52e] p-6 sm:p-8 md:p-10 2xl:p-14 rounded-b-3xl">
         {/* Left Content */}
-        <div className="p-4 sm:p-6 md:p-8 rounded-2xl w-full">
-          <p className="text-lg mb-4">
+        <div className="p-4 sm:p-6 md:p-8 2xl:p-10 rounded-2xl w-full">
+          <p className="text-lg sm:text-xl 2xl:text-2xl mb-4">
             We’re happy to answer any questions you may have and help you
             determine which of our services best fit your needs.
           </p>
 
-          <p className="text-[#000] text-lg font-semibold mb-8 cursor-pointer hover:underline w-fit">
-            Call us at: 1-800-356-8933
+          <p className="text-[#000] text-lg sm:text-xl 2xl:text-2xl font-semibold mb-8 cursor-pointer hover:underline w-fit">
+            Call us at: +91 7036356760
           </p>
 
-          <h3 className="text-2xl font-bold mb-4">Your benefits:</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-base mb-10">
+          <h3 className="text-2xl sm:text-3xl 2xl:text-4xl font-bold mb-4">
+            Your benefits:
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm sm:text-base 2xl:text-lg mb-10">
             {[
               "Client-oriented",
               "Independent",
@@ -48,7 +52,10 @@ const ContactWithUs = () => {
             ))}
           </div>
 
-          <h3 className="text-2xl font-bold mb-6">What happens next?</h3>
+          <h3 className="text-2xl sm:text-3xl 2xl:text-4xl font-bold mb-6">
+            What happens next?
+          </h3>
+
           {[
             "We schedule a call at your convenience",
             "We do a discovery and consulting meeting",
@@ -56,19 +63,19 @@ const ContactWithUs = () => {
           ].map((step, i) => (
             <div key={i} className="flex items-start gap-4 mb-4">
               <div className="text-xl font-bold text-[#000]">•</div>
-              <p className="text-[#000]">{step}</p>
+              <p className="text-base sm:text-lg 2xl:text-xl text-[#000]">
+                {step}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Contact Form */}
         <form
-          className="bg-[#fff] p-6 sm:p-10 rounded-2xl shadow-md w-full border border-gray-100 
-  relative z-10
-  lg:-mt-40 lg:mx-auto lg:max-w-xl
-"
+          className="bg-[#fff] p-6 sm:p-8 md:p-10 2xl:p-12 rounded-2xl shadow-md w-full border border-gray-100 relative z-10
+      lg:-mt-40 lg:mx-auto lg:max-w-xl 2xl:max-w-2xl"
         >
-          <h3 className="text-center text-2xl font-bold text-[#000] mb-8">
+          <h3 className="text-center text-2xl sm:text-3xl 2xl:text-4xl font-bold text-[#000] mb-8">
             Schedule a Free Consultation
           </h3>
 
@@ -125,7 +132,7 @@ const ContactWithUs = () => {
             />
           </div>
 
-          {/* Service Select */}
+          {/* Select */}
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">
               How Can We Help You?
@@ -155,7 +162,7 @@ const ContactWithUs = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-1/3 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 rounded-md transition duration-200"
+            className="w-1/2 sm:w-1/3 bg-[#ed3b1b] hover:bg-[#ed3a1b79] text-white font-semibold py-2 rounded-md transition duration-200 mx-auto block"
           >
             Submit
           </button>

@@ -4,6 +4,7 @@ import WhyUsIntro from "../components/WhyUsIntro";
 import SoftwareServicesGrid from "../components/SoftwareServicesGrid";
 import PerformanceAndServices from "../components/PerformanceAndServices ";
 import ContactWithUs from "../components/ContactWithUs";
+import ScrollSnapContainers from "../components/ScrollSnapContainers";
 
 function IaPage() {
   return (
@@ -11,6 +12,7 @@ function IaPage() {
       <SoftwareShowcase pageIndex={3} />
       <SoftwareServicesGrid />
       <WhyUsIntro />
+      <ScrollSnapContainers />
       {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>

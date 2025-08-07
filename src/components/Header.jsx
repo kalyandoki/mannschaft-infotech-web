@@ -115,7 +115,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-roboto">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-8xl mx-auto flex items-center justify-between ml-4 mr-4">
         {/* Logo */}
         <Link to="/#home" onClick={closeMenu}>
           <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
@@ -128,7 +128,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-6 font-roboto">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}

@@ -6,10 +6,10 @@ import PerformanceAndServices from "../components/PerformanceAndServices ";
 
 import Tabs from "../components/Tabs";
 
-import hard1 from "../assets/mannInfra/netP11.webp";
-import hard2 from "../assets/mannInfra/netP22.webp";
+import hard1 from "../assets/mannInfra/lan1.jpeg";
+import hard2 from "../assets/mannInfra/lan2.jpg";
 import hard3 from "../assets/mannInfra/netP44.jpg";
-import hard4 from "../assets/mannInfra/netP33.jpeg";
+import hard4 from "../assets/mannInfra/fiber2.jpg";
 import hard5 from "../assets/mannInfra/netP55.jpg";
 import ItInfraHeader from "../components/ItInfraHeader";
 

@@ -7,8 +7,8 @@ import PerformanceAndServices from "../components/PerformanceAndServices ";
 import Tabs from "../components/Tabs";
 
 import hard1 from "../assets/mannInfra/mul11.jpg";
-import hard2 from "../assets/mannInfra/mul22.jpg";
-import hard3 from "../assets/mannInfra/mul333.jpg";
+import hard2 from "../assets/mannInfra/a1.jpg";
+import hard3 from "../assets/mannInfra/br22.jpg";
 
 const tabData = [
   {

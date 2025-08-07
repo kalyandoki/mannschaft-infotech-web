@@ -15,7 +15,7 @@ const OurWorks = () => (
       <WorksFilter />
       <WorksGrid />
       <WorksPopup />
-      <SlidingBanner />
+      {/* <SlidingBanner /> */}
     </section>
   </>
 );

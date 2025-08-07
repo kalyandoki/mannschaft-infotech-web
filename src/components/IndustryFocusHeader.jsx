@@ -122,17 +122,9 @@ const IndustryFocusHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-medium font-roboto">
-      <div className="max-w-8xl mx-auto flex items-center justify-between ml-8 mr-8">
+      <div className="max-w-8xl mx-auto flex items-center justify-between ml-4 mr-4">
         {/* Logo */}
-        {/* <ScrollLink
-          to="home"
-          smooth={true}
-          spy={true}
-          offset={-30}
-          duration={200}
-          onClick={closeMenu}
-          className="cursor-pointer"
-        > */}
+
         <Link to="/#home" onClick={closeMenu}>
           <div className="w-32 h-26 md:w-50 md:h-30 rounded-full">
             <img
@@ -142,7 +134,6 @@ const IndustryFocusHeader = () => {
             />
           </div>
         </Link>
-        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-2 lg:gap-8 font-roboto">

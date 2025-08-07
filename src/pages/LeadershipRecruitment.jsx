@@ -23,8 +23,8 @@ function LeadershipRecruitment() {
 
   return (
     <>
-      <section id="/leadership-recruitment">
-        <ITConsultingIntro />
+      <ITConsultingIntro />
+      <section id="leadership-recruitment">
         <Leadership />
       </section>
 

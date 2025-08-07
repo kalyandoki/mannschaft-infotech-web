@@ -15,9 +15,9 @@ function DigitalMarketingIntro() {
         style={{ backgroundImage: `url(${consultingBg})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60 flex items-center justify-start px-6 md:px-16">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-start px-6 md:px-16 2xl:px-32">
           <div>
-            <h1 className="text-white text-3xl md:text-6xl font-extrabold animate-fadeInDown pt-10">
+            <h1 className="text-white text-3xl md:text-6xl 2xl:text-7xl font-extrabold animate-fadeInDown pt-10">
               Digital <span className="text-[#79b944]">Marketing</span>
             </h1>
 
@@ -35,8 +35,8 @@ function DigitalMarketingIntro() {
                 </svg>
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-[#fff] text-lg">Watch</span>
-                <span className="text-[#79b944] font-semibold">
+                <span className="text-[#fff] text-lg 2xl:text-xl">Watch</span>
+                <span className="text-[#79b944] font-semibold 2xl:text-xl">
                   INTRO VIDEO
                 </span>
               </div>
@@ -45,8 +45,8 @@ function DigitalMarketingIntro() {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-8 py-10 bg-gray-100">
-        <p className="text-gray-700 text-base text-center md:text-lg">
+      <div className="px-4 sm:px-6 lg:px-8 2xl:px-44 py-10 bg-gray-100">
+        <p className="text-gray-700 text-base text-center md:text-lg 2xl:text-xl leading-relaxed">
           Mannschaft Infotech team is passionate about digital technologies and
           continuously update our strategies with the emerging technologies.
           Today we have team of professionals with registered office in India.

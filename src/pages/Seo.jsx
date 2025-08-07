@@ -24,9 +24,9 @@ function Seo() {
 
   return (
     <>
+      <DigitalMarketingIntro />
+      <WhatWeDoSection />
       <section id="seo">
-        <DigitalMarketingIntro />
-        <WhatWeDoSection />
         <SeoPage />
       </section>
 

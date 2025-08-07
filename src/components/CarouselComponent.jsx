@@ -35,7 +35,7 @@ const images = [
 
 const CarouselComponent = () => {
   return (
-    <div className="max-w-8xl mx-auto pt-14 ">
+    <div className="max-w-8xl mx-auto pt-14 2xl:pt-24">
       {/* Carousel */}
       <Carousel
         showArrows={false}
@@ -55,7 +55,7 @@ const CarouselComponent = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className="w-full h-[450px] pb-18 pl-4 pr-4 pt-15 md:pt-20 sm:h-[550px] md:h-[600px] lg:h-[680px] relative"
+            className="w-full h-[450px] pb-18 2xl:pb-26 pl-4 pr-4 pt-15 md:pt-20 sm:h-[550px] md:h-[600px] lg:h-[680px] relative 2xl:h-[820px]"
           >
             <img
               src={img}

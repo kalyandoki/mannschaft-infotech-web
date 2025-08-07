@@ -39,25 +39,33 @@ const services = [
 
 export default function WhatWeDoSection() {
   return (
-    <section className="w-full px-6 py-12 bg-[#fff] text-[#000]">
+    <section className="w-full px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 2xl:px-28 py-10 sm:py-12 md:py-16 bg-[#fff] text-[#000] font-roboto">
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-8xl mx-auto pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 max-w-7xl 2xl:max-w-8xl mx-auto pt-6 sm:pt-10">
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="bg-white/5 rounded-3xl shadow-lg overflow-hidden hover:scale-105 transition duration-300"
+            className="bg-white/5 rounded-3xl shadow-lg overflow-hidden hover:scale-[1.03] transition-transform duration-300"
           >
-            <h3 className="text-2xl text-center font-bold pb-8 text-[#79b944]">
+            {/* Title */}
+            <h3 className="text-xl sm:text-2xl text-center font-bold pb-6 sm:pb-8 text-[#79b944]">
               {service.title}
             </h3>
+
+            {/* Image */}
             <img
               src={service.image}
               alt={service.title}
-              className="w-[90%] h-60 object-cover m-auto rounded-3xl"
+              className="w-[90%] h-48 sm:h-52 md:h-56 lg:h-60 object-cover m-auto rounded-3xl"
             />
-            <div className="p-6">
+
+            {/* Description */}
+            <div className="p-4 sm:p-6">
               {service.description.split("\n").map((line, i) => (
-                <p key={i} className="text-md text-[#000] mb-2 text-center">
+                <p
+                  key={i}
+                  className="text-sm sm:text-base md:text-md text-[#000] mb-2 text-center"
+                >
                   {line}
                 </p>
               ))}

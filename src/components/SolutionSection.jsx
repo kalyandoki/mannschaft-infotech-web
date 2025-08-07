@@ -165,34 +165,34 @@ const solutions = [
 
 const SolutionSection = () => {
   return (
-    <section className="bg-[#5a9db829] py-20 px-4 sm:px-6 md:px-10 lg:px-20 font-roboto">
-      <div className="max-w-7xl mx-auto mb-12 text-left">
-        <span className="text-black font-semibold rounded-md p-2 bg-[#4f401e55]">
+    <section className="bg-[#fff] py-20 px-4 sm:px-6 md:px-10 lg:px-20 2xl:px-40 font-roboto">
+      <div className="max-w-8xl mx-auto mb-12 2xl:mb-20 text-left">
+        <span className="text-black font-semibold rounded-md p-2 2xl:p-3 bg-[#4f401e55] text-sm 2xl:text-base">
           How we do
         </span>
-        <h2 className="text-3xl md:text-5xl font-extrabold text-black mt-4">
+        <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-extrabold text-black mt-4 2xl:mt-6">
           Our Smart Solutions
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 2xl:gap-12 max-w-8xl mx-auto">
         {solutions.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-md p-8 text-left hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+            className="bg-white rounded-2xl shadow-md p-8 2xl:p-12 text-left hover:scale-105 transition-all duration-300 hover:shadow-2xl"
           >
-            {item.icon}
-            <h3 className="text-xl sm:text-2xl font-bold text-[#090c62] mb-3">
+            <div className="text-3xl 2xl:text-5xl mb-4">{item.icon}</div>
+            <h3 className="text-xl sm:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-3">
               {item.title}
             </h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+            <p className="text-sm sm:text-base 2xl:text-lg text-gray-700 leading-relaxed">
               {item.description}
             </p>
-            <hr className="my-4" />
+            <hr className="my-4 2xl:my-6" />
             <div className="text-left">
               <a
                 href="#"
-                className="text-indigo-600 text-base font-semibold hover:underline"
+                className="text-indigo-600 text-base 2xl:text-lg font-semibold hover:underline"
               >
                 Learn more →
               </a>
@@ -201,9 +201,9 @@ const SolutionSection = () => {
         ))}
       </div>
 
-      <div className="text-center mt-12">
+      <div className="text-center mt-12 2xl:mt-20">
         <Link to="/solutions">
-          <button className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all">
+          <button className="px-6 2xl:px-8 py-3 2xl:py-4 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all text-base 2xl:text-lg">
             View more solutions
           </button>
         </Link>

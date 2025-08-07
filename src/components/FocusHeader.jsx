@@ -1,10 +1,3 @@
-// import React from "react";
-
-// function FocusHeader() {
-//   return <div>FocusHeader</div>;
-// }
-
-// export default FocusHeader;
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Events, scroller, Link as ScrollLink } from "react-scroll";
@@ -122,17 +115,9 @@ const FocusHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#fff] shadow-md backdrop-blur-md font-bold font-roboto">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-8xl mx-auto flex items-center justify-between ml-4 mr-4">
         {/* Logo */}
-        {/* <ScrollLink
-          to="home"
-          smooth={true}
-          spy={true}
-          offset={-30}
-          duration={200}
-          onClick={closeMenu}
-          className="cursor-pointer"
-        > */}
+
         <Link to="/#home" onClick={closeMenu}>
           <div className="w-32 h-26 md:w-50 md:h-30 rounded-full ml-4">
             <img
@@ -142,10 +127,9 @@ const FocusHeader = () => {
             />
           </div>
         </Link>
-        {/* </ScrollLink> */}
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-5 lg:gap-8 font-roboto font-bold">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-6 font-roboto font-bold">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}

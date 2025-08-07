@@ -5,23 +5,23 @@ const HealthcareSection = () => {
   return (
     <section className="relative w-full bg-white text-gray-900 overflow-hidden pt-20 border-b-2 border-gray-200">
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-8 py-12 text-center">
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold mb-6">
+      <div className="max-w-5xl 2xl:max-w-7xl mx-auto px-4 sm:px-8 py-12 2xl:py-20 text-center">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl 2xl:text-6xl font-extrabold mb-6">
           <span className="text-[#010ED0]">Healthcare</span>
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">
+        <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-700 mb-8">
           Transforming the future of healthcare with reliable IT services —
           Mannschaft Infotech delivers intelligent, secure, and scalable digital
           solutions to enhance patient care, streamline operations, and drive
           innovation across medical facilities and systems.
         </p>
-        <button className="bg-[#010ED0] hover:bg-[#1b90e0] text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
+        <button className="bg-[#010ED0] hover:bg-[#1b90e0] text-white font-semibold px-6 py-3 2xl:px-8 2xl:py-4 rounded-full shadow-lg transition duration-300">
           Get a Free Consultation
         </button>
       </div>
 
       {/* Image */}
-      <div className="w-full h-[200px] sm:h-[300px] lg:h-[350px] overflow-hidden pl-6 pr-6">
+      <div className="w-full h-[200px] sm:h-[300px] lg:h-[350px] 2xl:h-[450px] overflow-hidden pl-6 pr-6">
         <img
           src={industryImage}
           alt="Healthcare Industry"
@@ -30,12 +30,12 @@ const HealthcareSection = () => {
       </div>
 
       {/* Focus Section */}
-      <div className="max-w-6xl mx-auto px-2 sm:px-6 lg:px-6 py-6">
-        <div className="bg-[#fff] text-[#000] rounded-3xl p-2 sm:p-6 md:p-8">
-          <span className="block text-sm sm:text-base md:text-lg font-semibold uppercase tracking-widest text-[#010ED0] mb-4">
+      <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-2 sm:px-6 lg:px-6 2xl:px-10 py-6 2xl:py-10">
+        <div className="bg-[#fff] text-[#000] rounded-3xl p-2 sm:p-6 md:p-8 2xl:p-10">
+          <span className="block text-sm sm:text-base md:text-lg 2xl:text-xl font-semibold uppercase tracking-widest text-[#010ED0] mb-4">
             Focus
           </span>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed tracking-wide">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl leading-relaxed tracking-wide">
             Mannschaft Infotech empowers the healthcare sector with robust IT
             infrastructure, enabling hospitals, clinics, and care providers to
             digitize patient records, enhance telemedicine capabilities, ensure

@@ -239,35 +239,37 @@ const MoreSolutionsSection = () => {
   const displayed = showAll ? solutions : solutions.slice(0, 6);
 
   return (
-    <section className="bg-[#52b9e121] py-20 px-4 sm:px-6 lg:px-20 font-roboto">
-      <div className="max-w-7xl mx-auto mb-12">
-        <span className="text-[#000] font-semibold rounded-md px-3 py-1 bg-[#4f401e55]">
+    <section className="bg-[#52b9e121] py-20 px-4 sm:px-6 lg:px-20 2xl:px-32 font-roboto">
+      <div className="max-w-7xl 2xl:max-w-8xl mx-auto mb-12">
+        <span className="text-[#000] font-semibold rounded-md px-3 py-1 bg-[#4f401e55] text-sm 2xl:text-base">
           How We Do
         </span>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mt-4">
+        <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-extrabold text-gray-800 mt-4">
           Our IT Solutions
         </h2>
-        <p className="mt-2 text-gray-600 text-base sm:text-lg">
+        <p className="mt-2 text-gray-600 text-base sm:text-lg 2xl:text-xl max-w-4xl">
           Smart, scalable, and secure IT solutions crafted by Mannschaft
           Infotech to meet the diverse needs of modern businesses.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 2xl:gap-12">
         {displayed.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white shadow-md hover:shadow-xl rounded-2xl p-6 transition-transform transform hover:-translate-y-1 duration-300"
+            className="bg-white shadow-md hover:shadow-xl rounded-2xl p-6 2xl:p-8 transition-transform transform hover:-translate-y-1 duration-300"
           >
             {item.icon}
-            <h3 className="text-xl font-bold mb-2 text-gray-800">
+            <h3 className="text-xl 2xl:text-2xl font-bold mb-2 text-gray-800">
               {item.title}
             </h3>
-            <p className="text-gray-600 text-base">{item.description}</p>
+            <p className="text-gray-600 text-base 2xl:text-lg">
+              {item.description}
+            </p>
             <div className="mt-4">
               <a
                 href="#"
-                className="text-indigo-600 hover:underline font-medium text-sm"
+                className="text-indigo-600 hover:underline font-medium text-sm 2xl:text-base"
               >
                 Learn more →
               </a>
@@ -279,7 +281,7 @@ const MoreSolutionsSection = () => {
       <div className="text-center mt-10">
         <button
           onClick={toggleShowAll}
-          className="px-6 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+          className="px-6 py-2 2xl:px-8 2xl:py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition text-sm 2xl:text-base"
         >
           {showAll ? "Show Less" : "View More"}
         </button>

@@ -7,18 +7,18 @@ const VideoModal = () => {
   if (!isVideoModalOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#1e282297] bg-opacity-70 z-[1000] flex items-center justify-center">
-      <div className="bg-white rounded-lg overflow-hidden w-[90%] max-w-3xl shadow-lg relative">
+    <div className="fixed inset-0 bg-[#1e282297] bg-opacity-70 z-[1000] flex items-center justify-center px-2 2xl:px-6">
+      <div className="bg-white rounded-lg overflow-hidden w-[90%] max-w-3xl 2xl:max-w-5xl shadow-lg relative">
         {/* Close Button */}
         <button
           onClick={closeVideoModal}
-          className="absolute top-3 right-3 text-xl font-bold text-red-500 hover:text-red-700"
+          className="absolute top-3 right-3 text-xl 2xl:text-2xl font-bold text-red-500 hover:text-red-700"
         >
           ✕
         </button>
 
         {/* Video */}
-        <div className="w-full h-[60vh]">
+        <div className="w-full h-[60vh] 2xl:h-[75vh]">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/y89MEdbBtr0"

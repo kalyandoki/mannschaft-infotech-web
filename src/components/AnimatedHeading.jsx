@@ -18,7 +18,7 @@ const AnimatedHeading = ({ text }) => {
 
   return (
     <motion.h2
-      className="w-max text-2xl font-bold md:w-max md:text-5xl md:font-semibold border-b-2 border-green-400 pb-1 inline-flex flex-wrap"
+      className="w-max text-2xl font-bold md:text-5xl md:font-semibold 2xl:text-6xl 2xl:font-bold 2xl:pb-2 border-b-2 border-green-400 inline-flex flex-wrap"
       variants={container}
       initial="hidden"
       animate="visible"

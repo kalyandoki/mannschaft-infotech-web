@@ -40,7 +40,7 @@ const SlidingBanner = () => {
   const { heading, description, buttonText } = slides[current];
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden mt-10">
+    <div className="relative w-full h-[80vh] overflow-hidden mt-10 2xl:h-[85vh]">
       {/* Top Wave */}
       <div className="absolute top-0 w-full overflow-hidden leading-none z-10 rotate-180">
         <svg
@@ -69,14 +69,14 @@ const SlidingBanner = () => {
       ))}
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 bg-[#1e2024b3] bg-opacity-50 transition-opacity duration-1000 ease-in-out">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 animate-fade-in">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-10 lg:px-16 2xl:px-36 bg-[#1e2024b3] bg-opacity-50 transition-opacity duration-1000 ease-in-out">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-white mb-4 animate-fade-in">
           {heading}
         </h1>
-        <p className="text-white text-base sm:text-lg mb-6 max-w-xl animate-fade-in">
+        <p className="text-white text-base sm:text-lg lg:text-xl 2xl:text-2xl mb-6 max-w-xl 2xl:max-w-4xl animate-fade-in">
           {description}
         </p>
-        <button className="bg-[#f5794cf5] hover:bg-[#d345116c] text-white px-7 py-1 rounded-xl shadow-md transition animate-fade-in">
+        <button className="bg-[#f5794cf5] hover:bg-[#d345116c] text-white px-7 py-2 sm:py-2.5 lg:py-3 2xl:px-10 2xl:py-3 rounded-xl shadow-md transition animate-fade-in text-sm sm:text-base 2xl:text-lg">
           {buttonText}
         </button>
       </div>

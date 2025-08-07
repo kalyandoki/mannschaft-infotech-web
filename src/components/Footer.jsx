@@ -8,13 +8,13 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0f1d44f1] text-white px-4 sm:px-8 md:px-12 lg:px-20 py-12">
-      <div className="max-w-7xl mx-auto grid gap-10 text-sm sm:text-base">
+    <footer className="w-full bg-[#3d3d3b] text-white px-4 sm:px-8 md:px-12 lg:px-20 py-12">
+      <div className="max-w-8xl mx-auto grid gap-10 text-sm sm:text-base">
         {/* Contact & Services */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {/* Contact Us */}
           <div>
-            <h2 className="text-lg sm:text-xl font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
+            <h2 className="text-lg sm:text-xl font-bold text-white mb-4  hover:text-yellow-400 transition duration-300">
               Contact Us
             </h2>
             <hr className="border-gray-500 mb-3" />
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* IT Infra */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
+            <h3 className="text-lg font-bold text-white mb-4  hover:text-yellow-400 transition duration-300">
               IT Infra
             </h3>
             <hr className="border-gray-500 mb-3" />
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Consulting */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
+            <h3 className="text-lg font-bold text-white mb-4  hover:text-yellow-400 transition duration-300">
               Consulting
             </h3>
             <hr className="border-gray-500 mb-3" />
@@ -90,7 +90,7 @@ const Footer = () => {
 
           {/* Software */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
+            <h3 className="text-lg font-bold text-white mb-4  hover:text-yellow-400 transition duration-300">
               Software
             </h3>
             <hr className="border-gray-500 mb-3" />
@@ -109,7 +109,7 @@ const Footer = () => {
 
           {/* Digital */}
           <div>
-            <h3 className="text-lg font-bold text-white mb-4 font-serif hover:text-yellow-400 transition duration-300">
+            <h3 className="text-lg font-bold text-white mb-4  hover:text-yellow-400 transition duration-300">
               Digital
             </h3>
             <hr className="border-gray-500 mb-3" />
@@ -123,7 +123,7 @@ const Footer = () => {
       </div>
       {/* Social Icons */}
       <div className="mt-10 flex flex-col items-center text-center">
-        <h2 className="text-lg sm:text-xl font-bold font-serif text-white mb-4 hover:text-yellow-400 transition duration-300">
+        <h2 className="text-lg sm:text-xl font-bold  text-white mb-4 hover:text-yellow-400 transition duration-300">
           Follow Us
         </h2>
         <hr className="border-gray-500 mb-4 w-40" />

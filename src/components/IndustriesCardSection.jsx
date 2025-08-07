@@ -62,20 +62,22 @@ const industries = [
 
 const IndustriesCardSection = () => {
   return (
-    <section className="w-full bg-[#71c0df37] py-20 px-4 md:px-12 lg:px-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <section className="w-full bg-[#71c0df37] py-20 px-4 md:px-12 lg:px-20 2xl:px-32">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 2xl:gap-10">
         {industries.map((industry, index) => (
           <div
             key={index}
-            className="bg-white shadow-md hover:shadow-xl rounded-3xl p-6 border border-gray-100 transition duration-300 flex flex-col items-center text-center"
+            className="bg-white shadow-md hover:shadow-xl rounded-3xl p-6 2xl:p-8 border border-gray-100 transition duration-300 flex flex-col items-center text-center"
           >
-            <div className="mb-4">{industry.icon}</div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            <div className="mb-4 text-3xl 2xl:text-4xl">{industry.icon}</div>
+            <h3 className="text-xl 2xl:text-2xl font-semibold text-gray-800 mb-2">
               {industry.title}
             </h3>
-            <p className="text-sm text-gray-600 mb-4">{industry.description}</p>
+            <p className="text-sm 2xl:text-base text-gray-600 mb-4">
+              {industry.description}
+            </p>
             <hr className="w-full border-gray-200 mb-4" />
-            <button className="text-[#010ED0] hover:underline font-semibold text-sm">
+            <button className="text-[#010ED0] hover:underline font-semibold text-sm 2xl:text-base">
               🔗 Learn More
             </button>
           </div>

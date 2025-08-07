@@ -15,9 +15,9 @@ function ITConsultingIntro() {
         style={{ backgroundImage: `url(${consultingBg})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60 flex items-center justify-start px-6 md:px-16">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-start px-6 md:px-16 2xl:px-32">
           <div>
-            <h1 className="text-white text-3xl md:text-6xl font-extrabold animate-fadeInDown pt-10">
+            <h1 className="text-white text-3xl md:text-6xl 2xl:text-7xl font-extrabold animate-fadeInDown pt-10">
               IT <span className="text-[#fdbd1b]">Consulting</span>
             </h1>
 
@@ -25,9 +25,9 @@ function ITConsultingIntro() {
               onClick={openVideoModal}
               className="mt-6 flex items-center gap-4 p-3 rounded-xl hover:shadow-xl hover:scale-105 transition cursor-pointer"
             >
-              <div className="w-12 h-12 flex items-center justify-center bg-[#fdbd1b] rounded-full shadow-sm">
+              <div className="w-12 h-12 2xl:w-14 2xl:h-14 flex items-center justify-center bg-[#fdbd1b] rounded-full shadow-sm">
                 <svg
-                  className="w-8 h-8 text-[#fff]"
+                  className="w-8 h-8 2xl:w-9 2xl:h-9 text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -35,8 +35,8 @@ function ITConsultingIntro() {
                 </svg>
               </div>
               <div className="flex flex-col text-left">
-                <span className="text-[#fff] text-lg">Watch</span>
-                <span className="text-[#fdbd1b] font-semibold">
+                <span className="text-white text-lg 2xl:text-xl">Watch</span>
+                <span className="text-[#fdbd1b] font-semibold 2xl:text-2xl">
                   INTRO VIDEO
                 </span>
               </div>
@@ -45,8 +45,8 @@ function ITConsultingIntro() {
         </div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-8 py-6 bg-gray-100">
-        <p className="text-gray-700 text-base text-center md:text-lg">
+      <div className="px-4 sm:px-6 lg:px-8 2xl:px-32 py-6 2xl:py-10 bg-gray-100">
+        <p className="text-gray-700 text-base md:text-lg 2xl:text-xl text-center leading-relaxed">
           Our priority is YOUR requirement, and we will strive hard to meet that
           requirement, every time. Our Team has decades of experience to deliver
           on YOUR needs. Rest assured, if there is an opportunity to be

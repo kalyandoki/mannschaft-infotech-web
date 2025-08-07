@@ -3,13 +3,13 @@ import industryImage from "../assets/images/if111.jpg";
 
 function IndustriesSection() {
   return (
-    <section className="relative w-full bg-white text-gray-900 overflow-hidden pt-20 border-b-2 border-gray-200">
+    <section className="relative w-full bg-white text-gray-900 overflow-hidden pt-20 2xl:pt-28 border-b-2 border-gray-200">
       {/* Heading & Intro */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-8 py-12 text-center">
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold mb-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 2xl:px-16 py-12 2xl:py-20 text-center">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl 2xl:text-6xl font-extrabold mb-6 2xl:mb-8">
           Industry – <span className="text-[#010ED0]">Expertise</span>
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8">
+        <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-700 mb-8 2xl:mb-12">
           Mannschaft Infotech delivers industry-specific IT solutions that
           enhance efficiency, security, and innovation. From manufacturing and
           education to non-profit and healthcare, we help organizations harness
@@ -18,7 +18,7 @@ function IndustriesSection() {
       </div>
 
       {/* Industry Image */}
-      <div className="w-full h-[100px] sm:h-[200px] lg:h-[400px] overflow-hidden px-4">
+      <div className="w-full h-[100px] sm:h-[200px] lg:h-[400px] 2xl:h-[500px] overflow-hidden px-4 2xl:px-16">
         <img
           src={industryImage}
           alt="Industry Expertise"
@@ -27,12 +27,12 @@ function IndustriesSection() {
       </div>
 
       {/* Focus Area */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="bg-white text-gray-800 rounded-3xl p-4 sm:p-6 md:p-10">
-          <h3 className="text-sm sm:text-base md:text-3xl font-semibold uppercase tracking-widest text-[#000] text-center mb-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 2xl:px-20 py-10 2xl:py-16">
+        <div className="bg-white text-gray-800 rounded-3xl p-4 sm:p-6 md:p-10 2xl:p-14">
+          <h3 className="text-sm sm:text-base md:text-3xl 2xl:text-4xl font-semibold uppercase tracking-widest text-[#000] text-center mb-5 2xl:mb-8">
             Managed IT Services for Your Industry
           </h3>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed tracking-wide">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl leading-relaxed tracking-wide">
             At Mannschaft Infotech, we understand that each industry has unique
             technology needs. Our managed IT services are tailored to your
             sector — whether you need end-to-end infrastructure, cloud-based
