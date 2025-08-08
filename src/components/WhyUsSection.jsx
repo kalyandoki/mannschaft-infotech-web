@@ -58,7 +58,7 @@ function WhyUsSection() {
         </div>
 
         {/* === RIGHT IMAGE === */}
-        <div className="flex justify-end">
+        <div className="flex justify-center lg:justify-end 2xl:justify-end">
           <div className="w-44 sm:w-62 md:w-70 lg:w-82 2xl:w-[460px] bg-white rounded-3xl overflow-hidden p-4 shadow-xl">
             <img
               src={aboutImg}

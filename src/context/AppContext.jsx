@@ -22,7 +22,7 @@ import bgImg1 from "../assets/mannInfra/ux22.avif";
 import bgImg2 from "../assets/mannInfra/ui2.jpg";
 import bgImg3 from "../assets/mannInfra/ui3.avif";
 import bgImg4 from "../assets/mannInfra/ui4.jpg";
-import bgImg5 from "../assets/mannInfra/ui5.jpg";
+import bgImg5 from "../assets/mannInfra/ssui5.jpg";
 import bgImg6 from "../assets/mannInfra/ui66.png";
 
 const AppContext = createContext();

@@ -5,14 +5,18 @@ import SoftwareServicesGrid from "../components/SoftwareServicesGrid";
 import PerformanceAndServices from "../components/PerformanceAndServices ";
 import ContactWithUs from "../components/ContactWithUs";
 import ScrollSnapContainers from "../components/ScrollSnapContainers";
+import OurWorkingProcess from "../components/OurWorkingProcess";
+import OurProjectsWorks from "../components/OurProjectsWorks";
 
 function UiDevPage() {
   return (
     <>
       <SoftwareShowcase pageIndex={2} />
       <SoftwareServicesGrid />
-      <WhyUsIntro />
-      <ScrollSnapContainers />
+      <OurWorkingProcess />
+      <OurProjectsWorks />
+      {/* <WhyUsIntro />
+      <ScrollSnapContainers /> */}
       {/* <PerformanceAndServices /> */}
       <ContactWithUs />
     </>

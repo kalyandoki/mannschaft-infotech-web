@@ -5,16 +5,16 @@ import SoftwareShowcase from "../components/SoftwareShowcase";
 import SoftwareServicesGrid from "../components/SoftwareServicesGrid";
 import ScrollSnapContainers from "../components/ScrollSnapContainers";
 import WhyUsIntro from "../components/WhyUsIntro";
+import OurWorkingProcess from "../components/OurWorkingProcess";
+import OurProjectsWorks from "../components/OurProjectsWorks";
 
 function UxDesign() {
   return (
     <>
       <SoftwareShowcase pageIndex={0} />
       <SoftwareServicesGrid />
-      <WhyUsIntro />
-      <ScrollSnapContainers />
-
-      {/* <PerformanceAndServices /> */}
+      <OurWorkingProcess />
+      <OurProjectsWorks />
       <ContactWithUs />
     </>
   );

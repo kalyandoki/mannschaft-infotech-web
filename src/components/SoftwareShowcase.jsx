@@ -1,21 +1,43 @@
 //import bgImg from "../assets/mannInfra/ux22.avif";
 //import bgImg from "../assets/mannInfra/ux2.jpg";
+import { useState, useEffect } from "react";
 import AnimatedHeading from "./AnimatedHeading";
 import { useAppContext } from "../context/AppContext";
 
 export default function SoftwareShowcase({ pageIndex }) {
   const { servicesData } = useAppContext();
-  const page = servicesData[pageIndex];
 
+  // Take only the first 5 background images from servicesData
+  const bgSlides = servicesData.slice(0, 5);
+
+  const [currentBgIndex, setCurrentBgIndex] = useState(0);
+
+  // Change background randomly every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgIndex((prev) => {
+        let randomIndex;
+        do {
+          randomIndex = Math.floor(Math.random() * bgSlides.length);
+        } while (randomIndex === prev); // avoid repeating the same image
+        return randomIndex;
+      });
+    }, 2000); // change time here if needed
+    return () => clearInterval(interval);
+  }, [bgSlides.length]);
+
+  const page = servicesData[pageIndex];
   if (!page) return <p>Page not found</p>;
 
   return (
     <section
-      className="relative w-full h-screen 2xl:h-260 bg-cover bg-center flex items-center justify-start text-white"
-      style={{ backgroundImage: `url(${page.bgImage})` }}
+      className="relative w-full h-screen 2xl:h-260 bg-cover bg-center flex items-center justify-start text-white transition-all duration-1000 ease-in-out"
+      style={{
+        backgroundImage: `url(${bgSlides[currentBgIndex].bgImage})`,
+      }}
     >
-      {/* Overlay for slight darkening effect */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Gradient + Blur Overlay */}
+      <div className="absolute inset-0 backdrop-brightness-50"></div>
 
       {/* Text Content */}
       <div className="relative z-10 max-w-4xl 2xl:max-w-7xl px-6 sm:px-10 md:px-16 lg:px-24 2xl:px-32 py-12 2xl:py-20 bg-black/5 rounded-3xl m-6">

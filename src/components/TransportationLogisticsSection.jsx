@@ -7,7 +7,7 @@ const TransportationLogisticsSection = () => {
       {/* Content */}
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4 sm:px-8 2xl:px-14 py-12 2xl:py-20 text-center">
         <h2 className="text-2xl sm:text-4xl md:text-5xl 2xl:text-6xl font-extrabold mb-6 2xl:mb-8">
-          Transportation – <span className="text-[#010ED0]"> Logistics</span>
+          Transportation – <span className="text-[#ed3b1b]"> Logistics</span>
         </h2>
         <p className="text-base sm:text-lg md:text-xl 2xl:text-2xl text-gray-700 mb-8 2xl:mb-12 leading-relaxed">
           Optimizing transport and logistics with smart IT solutions —
@@ -15,7 +15,7 @@ const TransportationLogisticsSection = () => {
           and data-driven decision-making to ensure timely deliveries, efficient
           fleet management, and cost savings across the supply chain.
         </p>
-        <button className="bg-[#010ED0] hover:bg-[#1b90e0] text-white font-semibold px-6 2xl:px-8 py-3 2xl:py-4 rounded-full shadow-lg transition duration-300 text-sm sm:text-base 2xl:text-lg">
+        <button className="bg-[#ed3b1b] hover:bg-[#1b90e0] text-white font-semibold px-6 2xl:px-8 py-3 2xl:py-4 rounded-full shadow-lg transition duration-300 text-sm sm:text-base 2xl:text-lg">
           Get a Free Consultation
         </button>
       </div>
@@ -32,7 +32,7 @@ const TransportationLogisticsSection = () => {
       {/* Focus Section */}
       <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-2 sm:px-6 lg:px-6 2xl:px-14 py-6 2xl:py-10">
         <div className="bg-[#fff] text-[#000] rounded-3xl p-2 sm:p-6 md:p-8 2xl:p-10">
-          <span className="block text-sm sm:text-base md:text-lg 2xl:text-xl font-semibold uppercase tracking-widest text-[#010ED0] mb-4 2xl:mb-6">
+          <span className="block text-sm sm:text-base md:text-lg 2xl:text-xl font-semibold uppercase tracking-widest text-[#ed3b1b] mb-4 2xl:mb-6">
             Focus
           </span>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl leading-relaxed tracking-wide">
